@@ -12,7 +12,8 @@
 body {
   font-family: sans-serif;
   font-family: var(--base-font);
-  background-color: var(--lightblue);
+  background-image: url(../img/backgrounds/circle_background.png);
+  background-size: 100vw 100vh;
 }
 
 a {
