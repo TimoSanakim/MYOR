@@ -4,7 +4,7 @@
   --lightblue: #f9fcff;
   --yellow: #ffdb00;
   --white: #ffffff;
-  --off-white: #ffffff;
+  --off-white: #fafafa;
   --black: #222222;
   --base-font: "Noto Sans", sans-serif;
 }
@@ -16,8 +16,10 @@ body {
   background-size: 100vw 100vh;
   color: var(--black);
 }
+
 p {
 }
+
 a {
   text-decoration: none;
 }
