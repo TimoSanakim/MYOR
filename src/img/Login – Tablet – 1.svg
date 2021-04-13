@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="1080" viewBox="0 0 960 1080">
+  <defs>
+    <clipPath id="clip-Login_Tablet_1">
+      <rect width="960" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Login_Tablet_1" data-name="Login – Tablet – 1" clip-path="url(#clip-Login_Tablet_1)">
+    <rect width="960" height="1080" fill="#f9fcff"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="149" cy="149" r="149" transform="translate(-149 -120)" fill="#0058a3"/>
+    <circle id="Ellipse_16" data-name="Ellipse 16" cx="149" cy="149" r="149" transform="translate(820 938)" fill="#0058a3"/>
+    <circle id="Ellipse_17" data-name="Ellipse 17" cx="149" cy="149" r="149" transform="translate(76 1040)" fill="#0058a3"/>
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="56.5" cy="56.5" r="56.5" transform="translate(775 -84)" fill="#0058a3"/>
+  </g>
+</svg>
