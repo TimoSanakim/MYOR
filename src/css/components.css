@@ -1,6 +1,21 @@
 .content-box {
-  border-radius: 4px;
+  border-radius: 10px;
   background: var(--white);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
+}
+.btn {
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  font-weight: bold;
+  display: inline-block;
+}
+.btn--blue {
+  color: var(--white);
+  background: var(--blue);
+}
+.btn--white {
+  color: var(--blue);
+  background: var(--white);
 }

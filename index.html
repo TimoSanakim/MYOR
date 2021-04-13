@@ -18,8 +18,37 @@
     />
     <!-- JS -->
     <script src="src/js/main.js" defer></script>
+    <script src="src/js/service-worker.js"></script>
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
-    <main id="login"></main>
+    <main id="login">
+      <div class="logo">
+        <img src="src/img/logos/logo_ikea.png" alt="IKEA logo" />
+      </div>
+      <div class="login-forms">
+        <div class="account">
+          <div class="content-box">
+            <h1>Inloggen</h1>
+            <form action="">
+              <input type="text" placeholder="E-mail" required /><br />
+              <input type="password" placeholder="Wachtwoord" required /><br />
+              <input type="submit" class="btn btn--blue" />
+              <p>Nog geen account? <a href="">Registreer hier</a></p>
+            </form>
+          </div>
+        </div>
+        <div class="or">
+          <h1>OF</h1>
+        </div>
+        <div class="guest">
+          <div class="content-box">
+            <i class="far fa-user"></i>
+            <h1>Doorgaan als gast</h1>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
