@@ -31,6 +31,7 @@
     opacity: 0;
     margin-left: 10%;
   }
+
   100% {
     opacity: 1;
     margin-left: 0;
@@ -48,7 +49,7 @@ main#menu {
 }
 
 
-.header{
+.header {
   z-index: 3;
 }
 
@@ -66,24 +67,29 @@ main#menu {
   display: inline;
 }
 
-.arrow{
+.arrow {
   margin-left: 5vw;
 }
 
-.menu-option{
+nav img {
+  height: 40px;
+}
+
+.menu-option {
   font-size: 2em;
   margin-bottom: 8vh;
   font-weight: bold;
   cursor: pointer;
 }
-.menu-option.menu-open{
+
+.menu-option.menu-open {
   margin-bottom: 8vh;
   font-weight: bold;
   cursor: pointer;
   transition: .5s ease-in-out;
 }
 
-.menu-link{
+.menu-link {
   color: black;
 }
 
@@ -191,13 +197,13 @@ main#menu.menu-open li {
     background-color: var(--blue);
   }
 
-  65% {
+  76% {
     opacity: 1;
     visibility: visible;
     background-color: var(--blue);
   }
 
-  78% {
+  92% {
     opacity: 0;
     visibility: visible;
     background-color: var(--blue);
@@ -290,4 +296,64 @@ main#menu.menu-open li {
 
   }
 
+}
+
+.myorlogo {
+  display: block;
+  position: absolute;
+  width: 25%;
+  animation: myorfade 5s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  box-shadow: none;
+
+}
+
+@keyframes myorfade {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: none;
+  }
+
+
+  57% {
+    opacity: 0;
+    visibility: visible;
+
+  }
+
+
+  64% {
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+
+  }
+
+  76% {
+    box-shadow: 0 10px 80px 30px rgba(0, 0, 0, 0.09),
+      0 6px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  82% {
+    opacity: 1;
+    visibility: visible;
+
+  }
+
+  86% {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09),
+      0 6px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09),
+      0 6px 6px rgba(0, 0, 0, 0.1);
+  }
 }
