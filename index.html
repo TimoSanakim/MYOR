@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - MYOR</title>
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="src/css/reset.css" />
-    <link rel="stylesheet" href="src/css/base.css" />
-    <link rel="stylesheet" href="src/css/components.css" />
-    <!-- Pages CSS -->
-    <link rel="stylesheet" href="src/css/pages/login.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- JS -->
-    <script src="src/js/main.js" defer></script>
-    <script src="service-worker.js"></script>
-    <!-- Manifest -->
-    <link rel="manifest" href="manifest.webmanifest" />
-  </head>
-  <body>
-    <main id="login">
-      <div class="logo">
-        <img src="src/img/logos/logo_ikea.png" alt="IKEA logo" />
-      </div>
-      <div class="login-forms">
-        <div class="account">
-          <div class="content-box">
-            <h1>Inloggen</h1>
-            <form action="">
-              <input type="text" placeholder="E-mail" required /><br /><br />
-              <input
-                type="password"
-                placeholder="Wachtwoord"
-                required
-              /><br /><br />
-              <input type="submit" class="btn btn--blue" value="Inloggen" />
-            </form>
-            <p>Nog geen account? <a href="">Registreer hier</a></p>
-          </div>
-        </div>
-        <div class="or">
-          <h1>OF</h1>
-        </div>
-        <div class="guest">
-          <div class="content-box">
-            <i class="far fa-user"></i>
-            <h1>Doorgaan als gast</h1>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - MYOR</title>
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="src/css/reset.css" />
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="src/css/pages/login.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JS -->
+  <script src="src/js/main.js" defer></script>
+  <script src="service-worker.js"></script>
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.webmanifest" />
+</head>
+
+<body>
+  <div class="preloader">
+    <img src="../src/img/logos/ikea_load.png" class="logoloading">
+    <div class="squaretran"> </div>
+    <h2>BY GROEP 2</h2>
+  </div>
+  <main id="login">
+    <div class="logo">
+      <img src="src/img/logos/logo_ikea.png" alt="IKEA logo" />
+    </div>
+    <div class="login-forms">
+      <div class="account">
+        <div class="content-box">
+          <h1>Inloggen</h1>
+          <form action="">
+            <input type="text" placeholder="E-mail" required /><br /><br />
+            <input type="password" placeholder="Wachtwoord" required /><br /><br />
+            <input type="submit" class="btn btn--blue" value="Inloggen" />
+          </form>
+          <p>Nog geen account? <a href="">Registreer hier</a></p>
         </div>
       </div>
-    </main>
-  </body>
+      <div class="or">
+        <h1>OF</h1>
+      </div>
+      <div class="guest">
+        <div class="content-box">
+          <i class="far fa-user"></i>
+          <h1>Doorgaan als gast</h1>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
