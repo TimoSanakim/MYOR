@@ -123,3 +123,47 @@ nav img {
 nav #burgermenu {
   margin-left: auto;
 }
+
+/* preloader css loading screen animation */
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+.logoloading {
+  display: block;
+  position: relative;
+  width: 70%;
+  animation: enlarge 4s infinite;
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1);
+    left: 0%;
+  }
+
+  25% {
+    transform: scale(1.05);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    left: 0%;
+    transform: scale(1.05);
+  }
+
+  100% {
+    left: -500%;
+    transform: scale(1);
+  }
+}
