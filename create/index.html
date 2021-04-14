@@ -18,11 +18,58 @@
     />
     <!-- JS -->
     <script src="../src/js/main.js" defer></script>
-    <script src="../src/js/service-worker.js"></script>
+    <script src="../service-worker.js"></script>
     <!-- Manifest -->
     <link rel="manifest" href="../manifest.webmanifest" />
   </head>
   <body>
-    <main id="create"></main>
+    <main id="create">
+      <h1>Kamer maken</h1>
+      <div class="room"></div>
+      <h3>Producten</h3>
+      <span>Banken <i class="fas fa-chevron-down"></i></span>
+      <div class="products">
+        <div class="content-box blue">
+          <img src="../src/img/assets/products/bank-1.png" alt="Bank 1" />
+        </div>
+        <div class="content-box blue">
+          <img src="../src/img/assets/products/bank-2.png" alt="Bank 2" />
+        </div>
+        <div class="content-box">
+          <img src="../src/img/assets/products/bank-3.png" alt="Bank 3" />
+        </div>
+        <div class="content-box">
+          <img src="../src/img/assets/products/bank-4.png" alt="Bank 4" />
+        </div>
+        <div class="content-box">
+          <img src="../src/img/assets/products/bank-5.png" alt="Bank 5" />
+        </div>
+      </div>
+      <div class="products">
+        <div class="content-box blue">
+          <img src="../src/img/assets/products/bank-6.png" alt="Bank 6" />
+        </div>
+        <div class="content-box blue">
+          <img src="../src/img/assets/products/bank-7.png" alt="Bank 7" />
+        </div>
+        <div class="content-box">
+          <img src="../src/img/assets/products/bank-8.png" alt="Bank 8" />
+        </div>
+        <div class="content-box">
+          <img src="../src/img/assets/products/bank-9.png" alt="Bank 9" />
+        </div>
+        <div class="content-box">
+          <img src="../src/img/assets/products/bank-10.png" alt="Bank 10" />
+        </div>
+      </div>
+      <div class="content-box search-bar">
+        <form action="">
+          <input type="text" placeholder="Zoeken naar producten.." />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>

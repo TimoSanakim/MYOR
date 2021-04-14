@@ -1,4 +1,4 @@
-main#login {
+main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,41 +6,69 @@ main#login {
   width: 100vw;
   flex-direction: column;
 }
-main#login .logo img {
-  max-width: 200px;
+.logo img {
+  max-width: 25vw;
   margin-bottom: 50px;
 }
-main#login .login-forms {
+.login-forms {
   display: flex;
   justify-content: space-between;
   width: 75vw;
-  background: red;
   align-items: center;
 }
-main#login .account .content-box,
-main#login .guest .content-box {
+.account .content-box,
+.guest .content-box {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
-main#login .account .content-box a {
+.account .content-box a {
   color: var(--blue);
 }
-main#login .account .content-box input[type="text"],
-main#login .account .content-box input[type="password"] {
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
-  background: var(--off-white);
+.content-box h1 {
+  font-size: 1.3em;
 }
-main#login .account .content-box input[type="submit"] {
+.account .content-box input[type="text"],
+.account .content-box input[type="password"] {
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  background: var(--off-white);
+  width: calc(100% - 30px);
+}
+.account .content-box input[type="submit"] {
   font-size: 16px;
   border: none;
   font-family: var(--base-font);
+  width: 100%;
 }
-main#login .guest .content-box {
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+.guest .content-box {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.guest .content-box i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.content-box {
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 50px 20px;
+}
+.content-box:hover {
+  transform: translateY(-10px);
+}
+.or {
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+.or h1 {
+  font-size: 30px;
 }
