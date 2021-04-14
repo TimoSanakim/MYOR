@@ -3,6 +3,11 @@ main#preloader {}
 body {
     background-color: white;
     background-image: none;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .loading {
@@ -18,21 +23,23 @@ body {
 }
 
 .sides {
-    width: 30%;
+    width: 20%;
     height: 50%;
 }
 
 .center {
-    width: 40%;
+    width: 60%;
     height: 50%;
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.triplelayer {
+.fivelayer {
     width: 100%;
-    height: 33.3%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -46,6 +53,7 @@ body {
     position: relative;
     width: 100%;
     animation: enlarge 4s infinite;
+
 
 }
 
@@ -80,4 +88,40 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+@keyframes done {
+    0% {
+        left: 0%;
+
+    }
+
+    25% {
+        left: 0%;
+    }
+
+    50% {
+        left: 0%;
+    }
+
+    60% {
+        left: 0%;
+    }
+
+    100% {
+        left: -500%;
+    }
+}
+
+.shadow1 {
+    width: 100%;
+    height: 100%;
+    animation: done 4s infinite;
+    position: relative;
+}
+
+.shadow2 {
+    width: 100%;
+    height: 10%;
+
 }
