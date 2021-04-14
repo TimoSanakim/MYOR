@@ -19,13 +19,24 @@
     <!-- JS -->
     <script src="../src/js/main.js" defer></script>
     <script src="../service-worker.js"></script>
+    <script src="../src/js/menu.js"></script>
     <!-- Manifest -->
     <link rel="manifest" href="../manifest.webmanifest" />
   </head>
   <body>
+    <nav>
+      <img src="../src/img/logos/logo_ikea.png" />
+      <div id="burgermenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
     <main id="create">
       <h1>Kamer maken</h1>
-      <div class="room"></div>
+      <div class="room">
+        <img src="../src/img/assets/empty_room.png" alt="Empty Room" />
+      </div>
       <h3>Producten</h3>
       <span>Banken <i class="fas fa-chevron-down"></i></span>
       <div class="products">
@@ -69,6 +80,36 @@
             <i class="fas fa-search"></i>
           </button>
         </form>
+      </div>
+      <h3>Kamervorm</h3>
+      <div class="shapes">
+        <div class="content-box">
+          <img src="../src/img/assets/shapes/shape-1.png" alt="Shape 1" />
+        </div>
+        <div class="content-box">
+          <img src="../src/img/assets/shapes/shape-2.png" alt="Shape 2" />
+        </div>
+        <div class="content-box">
+          <img src="../src/img/assets/shapes/shape-3.png" alt="Shape 3" />
+        </div>
+        <div class="content-box">
+          <img src="../src/img/assets/shapes/shape-3.png" alt="Shape 4" />
+        </div>
+      </div>
+      <h3>Afmetingen (in mm)</h3>
+      <div class="measurements">
+        <div class="measurement-group">
+          <p>Muur A</p>
+          <div class="content-box">
+            <input type="number" placeholder="Afmeting A" />
+          </div>
+        </div>
+        <div class="measurement-group">
+          <p>Muur B</p>
+          <div class="content-box">
+            <input type="number" placeholder="Afmeting B" />
+          </div>
+        </div>
       </div>
     </main>
   </body>

@@ -1,35 +1,26 @@
 main#menu {
-    position: relative;
-    top: 30vh;
-    width: 75vw;
-    height: 30vh;   
+  position: relative;
+  top: 30vh;
+  width: 75vw;
+  height: 30vh;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }
 
-.ikealogo{
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 25%;
-    padding: 8%;
+p {
+  padding-bottom: 80px;
+  padding-right: 20px;
+  font-weight: bold;
 }
 
-
-p{
-    padding-bottom: 80px;
-    padding-right: 20px;
-    font-weight: bold;
+.menubutton {
+  display: flex;
 }
 
-.menubutton{
-    display: flex;
-}
-
-i{
-    color:#0058A3;
+i {
+  color: var(--blue);
 }

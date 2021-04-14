@@ -1,2 +1,93 @@
 main#home {
+    width: 75vw;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.ikealogo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 25%;
+    padding: 8%;
+}
+
+.fas {
+    position: fixed;
+    left: 80%;
+    top: 0px;
+    padding: 7%;
+    z-index: 10;
+}
+
+.headers {
+    margin-top: 5%;
+}
+
+.headers2 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.box {
+    position: absolute;
+    top: 180px;
+    right: -10px;
+    color: var(--blue);
+}
+
+.create-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    color: var(--blue);
+    font-size: 55px;
+}
+
+.emptyroom {
+    margin-left: 4%;
+}
+
+.row1 {
+    height: 120px;
+    width: 120px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.emptyroom2 {
+    margin-left: 1%;
+}
+
+.row2 {
+    height: 140px;
+    width: 140px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.flexrow1 {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.flexrow2 {
+    position: relative;
+    width: 70%;
+}
+
+.person {
+    height: 40px;
+    width: 40px;
+    margin-left: 65%;
+    margin-top: -20%;
+    z-index: 10;
 }
