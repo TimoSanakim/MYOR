@@ -20,3 +20,14 @@ if ("serviceWorker" in navigator) {
   // The registration of the service worker failed
   console.log("Browser: I don't support Service Workers :(");
 }
+
+/* JAVASCRIPT VOOR BURGER MENU */
+
+burgermenu = document.getElementById("burgermenu");
+menu = document.getElementById("menu");
+
+burgermenu.onclick = function() {
+    burgermenu.classList.toggle("open");
+    menu.classList.toggle("menu-open")
+}
+
