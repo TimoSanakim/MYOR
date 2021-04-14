@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu - MYOR</title>
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="../src/css/reset.css" />
-    <link rel="stylesheet" href="../src/css/base.css" />
-    <link rel="stylesheet" href="../src/css/components.css" />
-    <!-- Pages CSS -->
-    <link rel="stylesheet" href="../src/css/pages/menu.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- JS -->
-    <script src="../src/js/main.js" defer></script>
-    <script src="../service-worker.js"></script>
-    <!-- Manifest -->
-    <link rel="manifest" href="../manifest.webmanifest" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - MYOR</title>
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../src/css/reset.css" />
+  <link rel="stylesheet" href="../src/css/base.css" />
+  <link rel="stylesheet" href="../src/css/components.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="../src/css/pages/menu.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JS -->
+  <script src="../src/js/menu.js" defer></script>
+  <script src="../src/js/main.js" defer></script>
+  <script src="../service-worker.js" defer></script>
+  <!-- Manifest -->
+  <link rel="manifest" href="../manifest.webmanifest" />
+</head>
+
+<body>
+  <nav class="header">
     <img class="ikealogo" src="../src/img/logos/logo_ikea.png" />
-    <main id="menu">
-      <div class="menubutton">
-        <p>Ontwerpen</p>
-        <i class="fas fa-chevron-right" class="arrow"></i>
-      </div>
-      <div class="menubutton">
-        <p>Insperatie</p>
-        <i class="fas fa-chevron-right"></i>
-      </div>
-      <div class="menubutton">
-        <p>Profiel</p>
-        <i class="fas fa-chevron-right"></i>
-      </div>
-      <div class="menubutton">
-        <p>Instelling</p>
-        <i class="fas fa-chevron-right"></i>
-      </div>
-    </main>
-  </body>
+    <div id="burgermenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <main id="menu">
+    <div class="menubutton">
+      <p>Ontwerpen</p>
+      <i class="fas fa-chevron-right" class="arrow"></i>
+    </div>
+    <div class="menubutton">
+      <p>Insperatie</p>
+      <i class="fas fa-chevron-right"></i>
+    </div>
+    <div class="menubutton">
+      <p>Profiel</p>
+      <i class="fas fa-chevron-right"></i>
+    </div>
+    <div class="menubutton">
+      <p>Instelling</p>
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  </main>
+</body>
+
 </html>
