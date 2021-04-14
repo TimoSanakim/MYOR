@@ -1,3 +1,10 @@
+main#menu {
+    position: relative;
+    top: 30vh;
+    width: 75vw;
+    height: 30vh;   
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -12,12 +19,6 @@ body{
     padding: 8%;
 }
 
-main#menu {
-    position: relative;
-    top: 30vh;
-    width: 75vw;
-    height: 30vh;   
-}
 
 p{
     padding-bottom: 80px;
