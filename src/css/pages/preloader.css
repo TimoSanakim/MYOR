@@ -4,11 +4,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-}
-
-body {
     background-color: white;
-    background-image: none;
     overflow-y: hidden;
 }
 
