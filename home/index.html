@@ -19,14 +19,22 @@
     <!-- JS -->
     <script src="../src/js/main.js" defer></script>
     <script src="../service-worker.js"></script>
+    <script src="../src/js/menu.js"></script>
     <!-- Manifest -->
     <link rel="manifest" href="../manifest.webmanifest" />
   </head>
   <body>
-    <img class="ikealogo" src="../src/img/logos/logo_ikea.png" />
+    <nav>
+      <img src="../src/img/logos/logo_ikea.png" />
+      <div id="burgermenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
     <main id="home">
 
-      <i class="fas fa-bars fa-3x"></i>
+
       <h1 class="headers">Home</h1>
       <div class="content-box box">Hoe speel ik mee?</div>
       <h2 class="headers2">Kamer ontwerpen</h2>
@@ -40,11 +48,37 @@
       <h2 class="headers2">Inspiratie</h2>
 
       <div class="flexrow1">
-        <img class="row1" src="../src/img/assets/empty_room.png" />
-        <img class="emptyroom row1" src="../src/img/assets/empty_room.png" />
-        <img class="emptyroom row1" src="../src/img/assets/empty_room.png" />
+        <div class="room1">
+          <img class="row2" src="../src/img/assets/empty_room.png" />
+          <img class="person" src="../src/img/assets/faces/person1.png" />
+        </div>
+        <div class="room2">
+          <img class="emptyroom2 row2" src="../src/img/assets/empty_room.png" />
+          <img class="person" src="../src/img/assets/faces/person1.png" />
+        </div>
+        <div class="room3">
+          <img class="emptyroom2 row2" src="../src/img/assets/empty_room.png" />
+          <img class="person" src="../src/img/assets/faces/person1.png" />
+        </div>
+
       </div>
 
+      <div class="flexrow1">
+        <div class="room1">
+          <img class="row2" src="../src/img/assets/empty_room.png" />
+          <img class="person" src="../src/img/assets/faces/person1.png" />
+        </div>
+        <div class="room2">
+          <img class="emptyroom2 row2" src="../src/img/assets/empty_room.png" />
+          <img class="person" src="../src/img/assets/faces/person1.png" />
+        </div>
+        <div class="room3">
+          <img class="emptyroom2 row2" src="../src/img/assets/empty_room.png" />
+          <img class="person" src="../src/img/assets/faces/person1.png" />
+        </div>
+
+      </div>
+      
     </main>
   </body>
 </html>
