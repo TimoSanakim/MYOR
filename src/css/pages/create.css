@@ -42,20 +42,8 @@ h3 {
   justify-content: center;
 }
 
-.blue {
+.highlighted-item {
   background: var(--blue);
-}
-
-.blue:before {
-  content: "🟊";
-  position: absolute;
-  background: red;
-
-  color: var(--yellow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
 }
 
 .search-bar {
