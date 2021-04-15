@@ -77,23 +77,7 @@ h3 {
   padding-left: 2%;
 }
 
-.sort {
-  border-radius: 10px;
-  width: 20%;
-  height: 4vh;
-  margin-top: 6%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
-  background-position: center center;
-  display: flex;
-  align-items: flex-end;
-  padding-left: 2%;
-  align-items: center;
-}
 
-.sort p {
-  color: gray;
-
-}
 
 .filter {
   border-radius: 10px;
@@ -105,4 +89,54 @@ h3 {
   display: flex;
   align-items: flex-end;
   margin-bottom: -3%;
+}
+
+.arrowdropdown {
+  width: auto;
+  height: 26%;
+  padding-left: 6%;
+}
+
+input {
+  font-size: 1em;
+  font-family: var(--base-font);
+}
+
+.sort {
+  border-radius: 10px;
+  width: 20%;
+  height: 4vh;
+  margin-top: 6%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
+  background-position: center center;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 5%;
+  align-items: center;
+}
+
+.sort p {
+  color: gray;
+
+}
+
+.dropdown {
+  position: relative;
+  display: contents;
+  width: 100%;
+  height: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
