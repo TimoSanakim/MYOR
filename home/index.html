@@ -24,29 +24,49 @@
     <link rel="manifest" href="../manifest.webmanifest" />
   </head>
   <body>
-    <nav>
-      <img src="../src/img/logos/logo_ikea.png" />
-      <div id="burgermenu">
+    <!-- Nav -->
+    <nav class="header">
+      <a href="../home/"><img src="../src/img/logos/logo_ikea.png" /></a>
+      <div id="burgermenu" class="">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </nav>
+    <!-- Overlay -->
+    <div id="menu">
+      <div class="menucontainer">
+        <ul>
+          <li class="menu-option">
+            <a href="#" class="menu-link">Ontwerpen</a
+            ><i class="fas fa-chevron-right arrow"></i>
+          </li>
+          <li class="menu-option">
+            <a href="#" class="menu-link">Inspiratie</a
+            ><i class="fas fa-chevron-right arrow"></i>
+          </li>
+          <li class="menu-option">
+            <a href="#" class="menu-link">Profiel</a
+            ><i class="fas fa-chevron-right arrow"></i>
+          </li>
+          <li class="menu-option">
+            <a href="#" class="menu-link">Instellingen</a
+            ><i class="fas fa-chevron-right arrow"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Content -->
     <main id="home">
-
-
       <h1 class="headers">Home</h1>
       <div class="content-box box">Hoe speel ik mee?</div>
       <h2 class="headers2">Kamer ontwerpen</h2>
-
       <div class="flexrow1">
         <div class="content-box create-box">+</div>
         <img class="emptyroom row1" src="../src/img/assets/empty_room.png" />
         <img class="emptyroom row1" src="../src/img/assets/empty_room.png" />
       </div>
-      
       <h2 class="headers2">Inspiratie</h2>
-
       <div class="flexrow1">
         <div class="room1">
           <img class="row2" src="../src/img/assets/empty_room.png" />
@@ -60,9 +80,7 @@
           <img class="emptyroom2 row2" src="../src/img/assets/empty_room.png" />
           <img class="person" src="../src/img/assets/faces/person1.png" />
         </div>
-
       </div>
-
       <div class="flexrow1">
         <div class="room1">
           <img class="row2" src="../src/img/assets/empty_room.png" />
@@ -76,9 +94,7 @@
           <img class="emptyroom2 row2" src="../src/img/assets/empty_room.png" />
           <img class="person" src="../src/img/assets/faces/person1.png" />
         </div>
-
       </div>
-      
     </main>
   </body>
 </html>
