@@ -129,11 +129,8 @@
   position: fixed;
   top: 0;
   left: 0;
-<<<<<<< Updated upstream
   background: var(--lightblue);
-=======
-  z-index: 3;
->>>>>>> Stashed changes
+  z-index: 5;
 }
 
 .header img {
@@ -164,7 +161,7 @@
   margin-top: 30vh;
 }
 
-#menu i {
+.menu-option i {
   color: var(--blue);
   font-size: 75%;
   display: inline;
@@ -179,6 +176,7 @@
   margin-bottom: 8vh;
   font-weight: bold;
   cursor: pointer;
+  width: 100%;
 }
 
 .menu-option.menu-open {
