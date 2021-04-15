@@ -126,16 +126,17 @@
   margin-left: auto;
 }
 
-main#menu {
+#menu {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 0vh;
-  transition: opacity .5s, visibility .5s, height 0.5s;
+  transition: all 0.5s;
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
 }
-
 
 .header {
   z-index: 3;
@@ -169,23 +170,22 @@ main#menu {
   margin-bottom: 8vh;
   font-weight: bold;
   cursor: pointer;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .menu-link {
   color: black;
 }
 
-main#menu.menu-open {
+#menu.menu-open {
   position: fixed;
   opacity: 1;
   visibility: visible;
   height: 100vh;
-  background-color: white;
-  opacity: 0.8;
+  background-color: var(--white);
 }
 
-main#menu.menu-open li {
+#menu.menu-open li {
   animation: fadeInRight 1s ease-in-out;
 }
 
@@ -222,7 +222,6 @@ main#menu.menu-open li {
   opacity: 0;
   background-color: white;
   visibility: hidden;
-
 }
 
 @keyframes enlarge {
@@ -297,7 +296,6 @@ main#menu.menu-open li {
     visibility: hidden;
     background-color: var(--blue);
   }
-
 }
 
 @keyframes fadetext {
@@ -327,10 +325,9 @@ main#menu.menu-open li {
   100% {
     opacity: 0;
     visibility: hidden;
-
   }
 }
-  /* background-image: url("src/img/logos/logo_myor.png"); */
+/* background-image: url("src/img/logos/logo_myor.png"); */
 
 .squaretran {
   left: 300%;
@@ -347,38 +344,31 @@ main#menu.menu-open li {
     left: 300%;
     opacity: 100;
     visibility: visible;
-
   }
 
   45% {
     left: 300%;
     opacity: 100;
     visibility: visible;
-
   }
 
   70% {
     left: -300%;
     opacity: 100;
     visibility: visible;
-
   }
 
   81% {
     opacity: 0;
     visibility: hidden;
     left: -300%;
-
-
   }
 
   100% {
     opacity: 0;
     visibility: hidden;
     left: -300%;
-
   }
-
 }
 
 .myorlogo {
@@ -390,7 +380,6 @@ main#menu.menu-open li {
   visibility: hidden;
   border-radius: 10px;
   box-shadow: none;
-
 }
 
 @keyframes myorfade {
@@ -400,19 +389,15 @@ main#menu.menu-open li {
     box-shadow: none;
   }
 
-
   57% {
     opacity: 0;
     visibility: visible;
-
   }
-
 
   64% {
     opacity: 1;
     visibility: visible;
     box-shadow: none;
-
   }
 
   76% {
@@ -423,12 +408,10 @@ main#menu.menu-open li {
   82% {
     opacity: 1;
     visibility: visible;
-
   }
 
   86% {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09),
-      0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
     visibility: hidden;
   }
@@ -436,7 +419,6 @@ main#menu.menu-open li {
   100% {
     opacity: 0;
     visibility: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09),
-      0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
   }
 }
