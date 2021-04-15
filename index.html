@@ -40,9 +40,9 @@
           <form action="">
             <input type="text" placeholder="E-mail" required /><br /><br />
             <input type="password" placeholder="Wachtwoord" required /><br /><br />
-            <input type="submit" class="btn btn--blue" value="Inloggen" />
+            <input type="submit" id="btnLogin" onclick="Login()" class="btn btn--blue" value="Inloggen"/>
           </form>
-          <p>Nog geen account? <a href="">Registreer hier</a></p>
+          <p>Nog geen account? <a href="/register/index.html">Registreer hier</a></p>
         </div>
       </div>
       <div class="or">
@@ -56,6 +56,8 @@
       </div>
     </div>
   </main>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js" defer></script>
 </body>
 
 </html>

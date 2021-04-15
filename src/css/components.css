@@ -129,7 +129,11 @@
   position: fixed;
   top: 0;
   left: 0;
+<<<<<<< Updated upstream
   background: var(--lightblue);
+=======
+  z-index: 3;
+>>>>>>> Stashed changes
 }
 
 .header img {
@@ -151,10 +155,6 @@
   visibility: hidden;
   overflow: hidden;
   z-index: 2;
-}
-
-.header {
-  z-index: 3;
 }
 
 .menucontainer {
