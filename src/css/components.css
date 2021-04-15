@@ -136,6 +136,7 @@
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
+  z-index: 2;
 }
 
 .header {
