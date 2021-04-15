@@ -112,12 +112,16 @@
 .header {
   height: 60px;
   width: 85vw;
-  margin-left: 7.5vw;
+  padding-right: 7.5vw;
+  padding-left: 7.5vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 5vh;
+  position: fixed;
+  top: 0;
   left: 0;
+  background: var(--lightblue);
 }
 .header img {
   height: 40px;
@@ -183,7 +187,7 @@
   opacity: 1;
   visibility: visible;
   height: 100vh;
-  background-color: var(--white);
+  background: var(--lightblue);
 }
 
 #menu.menu-open li {
