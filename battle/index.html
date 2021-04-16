@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../src/css/base.css" />
     <link rel="stylesheet" href="../src/css/components.css" />
     <!-- Pages CSS -->
-    <link rel="stylesheet" href="../src/css/pages/battle.css" />
+    <link rel="stylesheet" href="../src/css/pages/battle/login.css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -23,35 +23,28 @@
     <link rel="manifest" href="../manifest.webmanifest" />
   </head>
   <body>
-    <!-- Nav -->
-    <nav class="header">
-      <a href="../home/"><img src="../src/img/logos/logo_ikea.png" /></a>
-      <div id="burgermenu" class="">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-    <!-- Overlay -->
-    <div id="menu">
-      <div class="menucontainer">
-        <ul>
-          <li class="menu-option">
-            <a href="#" class="menu-link">Challenge uitleg</a>
-            <i class="fas fa-chevron-right arrow"></i>
-          </li>
-          <li class="menu-option">
-            <a href="#" class="menu-link">Maak je kamer</a
-            ><i class="fas fa-chevron-right arrow"></i>
-          </li>
-          <li class="menu-option">
-            <a href="#" class="menu-link">Uitloggen</a
-            ><i class="fas fa-chevron-right arrow"></i>
-          </li>
-        </ul>
-      </div>
-    </div>
     <!-- Content -->
-    <main id="login"></main>
+    <main id="login">
+      <div class="logo">
+        <img src="../src/img/logos/logo_ikea.png" alt="IKEA logo" />
+      </div>
+      <div class="login-forms">
+        <a href="#">
+          <div class="content-box">
+            <i class="far fa-address-card"></i>
+            <h1>Login met IKEA pas</h1>
+          </div>
+        </a>
+        <div class="or">
+          <h1>OF</h1>
+        </div>
+        <a href="#">
+          <div class="content-box">
+            <i class="far fa-user"></i>
+            <h1>Doorgaan als gast</h1>
+          </div>
+        </a>
+      </div>
+    </main>
   </body>
 </html>
