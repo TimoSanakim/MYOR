@@ -1,151 +1,146 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+
 main#showcase {
-    position: relative;
-    top: 10vh;
-    width: 75vw;
-    height: 85vh;
+  width: 75vw;
 }
 
-body{
-    display: flex;
-    justify-content: center;
+b {
+  font-weight: bold;
 }
 
-b{
-    font-weight: bold;
+.ikealogo {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 25%;
+  padding: 8%;
 }
 
-.ikealogo{
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 25%;
-    padding: 8%;
+.showcaseroom {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
 }
 
-
-.showcaseroom{
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
+.roominfo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
-.roominfo{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
+.maininforoom {
+  width: 70%;
 }
 
-.maininforoom{
-    width: 70%;
-
+.roomstats {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.roomstat-item {
+  margin-right: 30px;
+}
+.imageroom {
+  width: 100%;
+  max-height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-
-.roomstats{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.heart {
+  color: red;
 }
 
-.imageroom{
-    max-width: 100%;
-    max-height: 100%;
+.download {
+  color: var(--blue);
 }
 
-.icons{
- margin-left: 10px;
+.views {
+  color: var(--yellow);
 }
 
-.heart{
-    color: red;
+.collection {
+  color: black;
 }
 
-.download{
-    color: var(--blue);
+.makerinfo {
+  float: right;
+  display: flex;
+  align-items: center;
 }
 
-.views{
-    color: var(--yellow);
+.makername {
+  float: left;
+  margin-right: 15px;
 }
 
-.collection{
-    color: black;
+.makerface {
+  width: 70px;
+  float: right;
 }
 
-
-.makerinfo{
-float: right;
-display: flex;
-align-items: center;
+.buttons {
+  display: flex;
+  font-size: 30px;
 }
 
-.makername{
-    float: left;
+.button {
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
 }
 
-.makerface{
-    width: 70px;
-    float: right;
+.informationbox {
+  margin-top: 20px;
 }
 
-.buttons{
-    display: flex;
-    font-size: 30px;
+.titles {
+  margin-top: 15px;
 }
 
-.button{
-    margin-right: 10px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10px;
-    height: 10px;
+.contentleft {
+  width: 20%;
 }
 
-.informationbox{
-    margin-top: 10px;
-    width: 100%;
+.contentdescription {
+  float: right;
+  width: 70%;
 }
 
-.titles{
-    margin-top: 15px;
+.contentfurniture {
+  float: right;
+  width: 70%;
 }
 
-.contentleft{
-    width: 20%;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contentdiscription{
-    float: right;
-    width: 70%;
+.boxgray {
+  height: 30px;
+  width: 30px;
+  background-color: #efefef;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contentfurniture{
-    float: right;
-    width: 70%;
-    
+.arrow {
+  color: var(--blue);
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boxgray{
-    height: 30px;
-    width: 30px;
-    background-color: #EFEFEF;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.arrow{
-    color: var(--blue);
-}
-
-.imagesofa{
-    width: 200%;
+.imagesofa {
+  width: 200%;
 }

@@ -19,34 +19,70 @@
       <!-- JS -->
       <script src="../src/js/main.js" defer></script>
       <script src="../service-worker.js"></script>
-      <script src="../src/js/menu.js" defer></script>
       <!-- Manifest -->
       <link rel="manifest" href="../manifest.webmanifest" />
    </head>
    <body>
-      <nav class="header">
-         <img src="../src/img/logos/logo_ikea.png" />
-         <div id="burgermenu">
-            <span></span>
-            <span></span>
-            <span></span>
-         </div>
-      </nav>
+    <!-- Nav -->
+    <nav class="header">
+      <a href="../home/"><img src="../src/img/logos/logo_ikea.png" /></a>
+      <div id="burgermenu" class="">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!-- Overlay -->
+    <div id="menu">
+      <div class="menucontainer">
+        <ul>
+          <li class="menu-option">
+            <a href="#" class="menu-link">Ontwerpen</a
+            ><i class="fas fa-chevron-right arrow"></i>
+          </li>
+          <li class="menu-option">
+            <a href="#" class="menu-link">Inspiratie</a
+            ><i class="fas fa-chevron-right arrow"></i>
+          </li>
+          <li class="menu-option">
+            <a href="#" class="menu-link">Profiel</a
+            ><i class="fas fa-chevron-right arrow"></i>
+          </li>
+          <li class="menu-option">
+            <a href="#" class="menu-link">Instellingen</a
+            ><i class="fas fa-chevron-right arrow"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Content -->
       <main id="showcase">
          <div class="showcaseroom">
            <div class="maininforoom">
             <div class="roominfo">
                <h1>Huiskamer #34</h1>
                <div class="roomstats">
-                  <i class="far fa-heart icons heart"></i> 200 
-                  <i class="fas fa-download icons download"></i> 25 
-                  <i class="far fa-eye icons views"></i></i> 500 
-                  <i class="fas fa-folder-plus icons collection"></i> 50
+                  <div class="roomstat-item">
+                     <i class="far fa-heart icons heart"></i> 
+                     <span>200</span> 
+                  </div>
+                  <div class="roomstat-item">
+                     <i class="fas fa-download icons download"></i> 
+                     <span>25</span> 
+                  </div>
+                  <div class="roomstat-item">
+                     <i class="far fa-eye icons views"></i></i>
+                     <span>500</span>
+                  </div>
+                  <div class="roomstat-item"> 
+                     <i class="fas fa-folder-plus icons collection"></i>
+                      <span>50</span>
+                  </div>
                </div>
               </div>
             </div>
             <div class="makerinfo">            
-              <h3 class="makername">Paul hoekstra</h3>
+              <h3 class="makername">Paul Hoekstra</h3>
             <img class="makerface" src="../src/img/assets/faces/person1.png">
           </div>
          </div>
@@ -65,7 +101,7 @@
          <div class="content-box informationbox">
             <h3 class="titles">
             Informatie</h>
-            <div class="contentdiscription">
+            <div class="contentdescription">
                <p><b>Omschrijving</b><br>
                   Deze kamer is gemaakt in een moderne simpele stijl. Ik ben gegaan voor meubels die wat hoekiger zijn 
                   en om de kamer wat sfeervoller te maken ook gebruik gemaakt van de smart lichten.
@@ -73,7 +109,7 @@
             </div>
             <div class="contentleft">
                <p class="titles"><b>Type</b><br>
-                  huiskamer
+                  Huiskamer
                </p>
                <p class="titles"><b>Datum</b><br>
                   13-02-2021
@@ -102,14 +138,14 @@
             </div>
             <div class="contentleft">
                <h3 class="titles">
-               Catogerie</h>
+               Categorie</h>
                <form>
                   <select>
                      <option value="volvo">Banken</option>
                   </select>
                </form>
                <p class="titles"><b>Type</b><br>
-                  huiskamer
+                  Huiskamer
                </p>
             </div>
          </div>

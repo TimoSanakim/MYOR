@@ -30,17 +30,63 @@ burgermenu.onclick = function () {
   menu.classList.toggle("menu-open");
 };
 
-// Firebase
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-var firebaseConfig = {
+//Firebase
+const firebaseConfig = {
   apiKey: "AIzaSyBpmVBBDHScvhs26Gt_YifCxjBvcDDfroM",
   authDomain: "myor-login.firebaseapp.com",
   projectId: "myor-login",
   storageBucket: "myor-login.appspot.com",
   messagingSenderId: "10976629898",
   appId: "1:10976629898:web:ac4e90576680132f998973",
-  measurementId: "G-LRLPPL2E6G",
+  measurementId: "G-LRLPPL2E6G"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+
+
+const btnLogin = document.getElementById("btnLogin");
+const btnLogout = document.getElementById("btnLogout");
+const btnRegister = document.getElementById("btnRegister");
+
+
+function Register(){
+  const emailInput = document.getElementById("emailInput").value;
+  const passInput = document.getElementById("passInput").value;
+
+  firebase.auth().signInWithEmailAndPassword(emailInput, passInput)
+  .then((userCredential) => {
+    // Signed in
+    var user = userCredential.user;
+    console.log(user);
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+  });
+}
+
+
+function Login() {
+  firebase.auth().signInWithEmailAndPassword(emailInput, passInput)
+    .then((userCredential) => {
+      // Signed in
+      var user = userCredential.user;
+      // ...
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+    });
+};
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    var uid = user.uid;
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});

@@ -1,28 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Overview - MYOR</title>
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="../src/css/reset.css" />
-    <link rel="stylesheet" href="../src/css/base.css" />
-    <link rel="stylesheet" href="../src/css/components.css" />
-    <!-- Pages CSS -->
-    <link rel="stylesheet" href="../src/css/pages/overview.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- JS -->
-    <script src="../src/js/main.js" defer></script>
-    <script src="../service-worker.js"></script>
-    <!-- Manifest -->
-    <link rel="manifest" href="../manifest.webmanifest" />
-  </head>
-  <body>
-    <main id="overview"></main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview - MYOR</title>
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../src/css/reset.css" />
+  <link rel="stylesheet" href="../src/css/base.css" />
+  <link rel="stylesheet" href="../src/css/components.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="../src/css/pages/overview.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JS -->
+  <script src="../src/js/main.js" defer></script>
+  <script src="../service-worker.js"></script>
+  <!-- Manifest -->
+  <link rel="manifest" href="../manifest.webmanifest" />
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="header">
+    <a href="../home/"><img src="../src/img/logos/logo_ikea.png" /></a>
+    <div id="burgermenu" class="">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <!-- Overlay -->
+  <div id="menu">
+    <div class="menucontainer">
+      <ul>
+        <li class="menu-option">
+          <a href="#" class="menu-link">Ontwerpen</a><i class="fas fa-chevron-right arrow"></i>
+        </li>
+        <li class="menu-option">
+          <a href="#" class="menu-link">Inspiratie</a><i class="fas fa-chevron-right arrow"></i>
+        </li>
+        <li class="menu-option">
+          <a href="#" class="menu-link">Profiel</a><i class="fas fa-chevron-right arrow"></i>
+        </li>
+        <li class="menu-option">
+          <a href="#" class="menu-link">Instellingen</a><i class="fas fa-chevron-right arrow"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Content -->
+  <main id="overview">
+    <h1>Kamer maken</h1>
+
+    <div class="alloptions">
+      <input type="email" name="Email" id="emailInput" placeholder="Zoeken.." class="search">
+      <div class="sort">
+
+
+        <div class="dropdown">
+          <p>Relevant </p><img src="../../src/img/assets/icons/dropdown_arrow.png" class="arrowdropdown">
+          <div class="dropdown-content">
+            <p>banan</p>
+          </div>
+        </div>
+      </div>
+      <div class="filter">
+      </div>
+
+    </div>
+
+    <div class="rooms">
+      <div class="room">
+      </div>
+      <div class="roomsmargin">
+      </div>
+      <div class="room">
+      </div>
+      <div class="room">
+      </div>
+      <div class="roomsmargin">
+      </div>
+      <div class="room">
+      </div>
+      <div class="room">
+      </div>
+      <div class="roomsmargin">
+      </div>
+      <div class="room">
+      </div>
+      <div class="room">
+      </div>
+      <div class="roomsmargin">
+      </div>
+      <div class="room">
+      </div>
+
+    </div>
+
+  </main>
+</body>
+
 </html>

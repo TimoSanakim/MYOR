@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="../src/css/reset.css" />
   <link rel="stylesheet" href="../src/css/base.css" />
   <link rel="stylesheet" href="../src/css/components.css" />
+  <!-- Core Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js" defer></script>
   <!-- Pages CSS -->
   <link rel="stylesheet" href="../src/css/pages/register.css" />
   <!-- Font Awesome -->
@@ -28,15 +31,10 @@
       <h3 class="text-register">Registreren</h3>
       <input type="email" name="Email" id="emailInput" placeholder="E-mail">
       <input type="password" name="Pass" id="passInput" placeholder="Password">
-      <a href="#" class="btn btn--white">Registreren</a>
+      <a href="/home/index.html" onclick="Register()" class="btn btn--white">Registreren</a>
     </div>
   </main>
 
-
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
 </body>
 
 </html>
