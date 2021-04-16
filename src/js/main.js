@@ -32,7 +32,27 @@ burgermenu.onclick = function () {
   body.classList.toggle("overflow-hidden");
 };
 
-//Firebase
+// Battle timer
+var timer = document.getElementById("timer");
+minutes = 10; // Time limit in minutes
+counter = minutes * 60; // Timer in seconds
+function secondsToMinutes(d) {
+  d = Number(d);
+  var m = Math.floor((d % 3600) / 60); // Calculate minutes
+  var s = Math.floor((d % 3600) % 60); // Calculate seconds
+  return ("0" + m).slice(-2) + ":" + ("0" + s).slice(-2); // Format in MM:SS format
+}
+var time = setInterval(function () {
+  if (counter === -1) return clearInterval(time);
+  timer.innerHTML = secondsToMinutes(counter); // Place current counter value in HTML
+  counter--;
+  // Alert for timer
+  if (counter == -1) {
+    alert("Tijd is over!");
+  }
+}, 1000); // Tick down every second
+
+// Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBpmVBBDHScvhs26Gt_YifCxjBvcDDfroM",
   authDomain: "myor-login.firebaseapp.com",
