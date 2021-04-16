@@ -56,13 +56,17 @@
 
     <div class="alloptions">
       <input type="email" name="Email" id="emailInput" placeholder="Zoeken.." class="search">
-      <div class="sort">
-
-
+      <div class="sort" id="sort" onclick="whendropdown()">
         <div class="dropdown">
-          <p>Relevant </p><img src="../../src/img/assets/icons/dropdown_arrow.png" class="arrowdropdown">
+
+          <div class="sortings">
+            <p>Relevant </p><img src="../../src/img/assets/icons/dropdown_arrow.png" class="arrowdropdown">
+          </div>
           <div class="dropdown-content">
-            <p>banan</p>
+            <p>Meest recent</p>
+            <p>populair</p>
+            <p>testenene</p>
+            <p>boterham</p>
           </div>
         </div>
       </div>
@@ -96,10 +100,15 @@
       </div>
       <div class="room">
       </div>
-
     </div>
 
   </main>
+
+  <script>
+    function whendropdown() {
+      document.getElementById("sort").style.borderRadius = "10px 10px 0px 0px";
+    }
+  </script>
 </body>
 
 </html>
