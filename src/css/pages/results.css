@@ -1,2 +1,81 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
 main#results {
+    width: 75vw;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winners{
+    padding: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image{
+    width: 100%;
+    border-radius: 8%;
+    margin-top: 10px;
+}
+
+.winnercontainer{
+    text-align: center;
+}
+
+.winnerinfo{
+    padding-top: 10px;
+    text-align: left;
+}
+
+.textbox{
+    display:flex;
+}
+
+.alignleft {
+    text-align: left;
+    width:50%;
+}
+.alignright {
+    text-align: right;
+    width:50%;
+}
+
+.winner2{
+    padding-top: 10vh;
+}
+
+.winner3{
+    padding-top: 10vh;
+}
+
+.iconimage{
+    width: 35%;
+}
+
+.iconimagefirst{
+    width: 50%;
 }
