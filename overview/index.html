@@ -56,21 +56,18 @@
 
     <div class="alloptions">
       <input type="email" name="Email" id="emailInput" placeholder="Zoeken.." class="search">
-      <div class="sort" id="sort" onclick="whendropdown()">
-        <div class="dropdown">
 
-          <div class="sortings">
-            <p>Relevant </p><img src="../../src/img/assets/icons/dropdown_arrow.png" class="arrowdropdown">
-          </div>
-          <div class="dropdown-content">
-            <p>Meest recent</p>
-            <p>populair</p>
-            <p>testenene</p>
-            <p>boterham</p>
-          </div>
-        </div>
+      <div id="sort" onclick="whendropdown()">
+
+        <p id="blocks1">Relevant </p>
+        <p id="blocks2">Meest recent</p>
+        <p id="blocks3">populair</p>
+        <p id="blocks4">testenene</p>
+        <p id="blocks5">boterham</p>
+
       </div>
-      <div class="filter">
+
+      <div id="filter">
       </div>
 
     </div>
@@ -106,7 +103,40 @@
 
   <script>
     function whendropdown() {
-      document.getElementById("sort").style.borderRadius = "10px 10px 0px 0px";
+      var x = document.getElementById('blocks2');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+
+
+
+      var y = document.getElementById('blocks3');
+      if (y.style.display === 'none') {
+        y.style.display = 'block';
+      } else {
+        y.style.display = 'none';
+      }
+
+
+
+      var u = document.getElementById('blocks4');
+      if (u.style.display === 'none') {
+        u.style.display = 'block';
+      } else {
+        u.style.display = 'none';
+      }
+
+
+
+      var i = document.getElementById('blocks5');
+      if (i.style.display === 'none') {
+        i.style.display = 'block';
+      } else {
+        i.style.display = 'none';
+      }
+
     }
   </script>
 </body>
