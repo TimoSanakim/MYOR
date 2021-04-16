@@ -24,10 +24,12 @@ if ("serviceWorker" in navigator) {
 // Burger menu
 burgermenu = document.getElementById("burgermenu");
 menu = document.getElementById("menu");
+body = document.querySelector("body");
 
 burgermenu.onclick = function () {
   burgermenu.classList.toggle("open");
   menu.classList.toggle("menu-open");
+  body.classList.toggle("overflow-hidden");
 };
 
 //Firebase
@@ -38,36 +40,37 @@ const firebaseConfig = {
   storageBucket: "myor-login.appspot.com",
   messagingSenderId: "10976629898",
   appId: "1:10976629898:web:ac4e90576680132f998973",
-  measurementId: "G-LRLPPL2E6G"
+  measurementId: "G-LRLPPL2E6G",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
 
 const btnLogin = document.getElementById("btnLogin");
 const btnLogout = document.getElementById("btnLogout");
 const btnRegister = document.getElementById("btnRegister");
 
-
-function Register(){
+function Register() {
   const emailInput = document.getElementById("emailInput").value;
   const passInput = document.getElementById("passInput").value;
 
-  firebase.auth().signInWithEmailAndPassword(emailInput, passInput)
-  .then((userCredential) => {
-    // Signed in
-    var user = userCredential.user;
-    console.log(user);
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-  });
+  firebase
+    .auth()
+    .signInWithEmailAndPassword(emailInput, passInput)
+    .then((userCredential) => {
+      // Signed in
+      var user = userCredential.user;
+      console.log(user);
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+    });
 }
 
-
 function Login() {
-  firebase.auth().signInWithEmailAndPassword(emailInput, passInput)
+  firebase
+    .auth()
+    .signInWithEmailAndPassword(emailInput, passInput)
     .then((userCredential) => {
       // Signed in
       var user = userCredential.user;
@@ -77,7 +80,7 @@ function Login() {
       var errorCode = error.code;
       var errorMessage = error.message;
     });
-};
+}
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
