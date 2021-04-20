@@ -15,9 +15,8 @@
   flex-direction: column;
 }
 .h2Head {
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
-
 .challengetext {
   margin-left: 7.5vw;
   margin-top: 3vh;
@@ -33,4 +32,32 @@
 .header {
   justify-content: center;
   padding-top: 6vh;
+}
+
+/* Product section */
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 5vh;
+}
+
+.products .content-box {
+  width: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.required-item:before {
+  background: var(--blue);
+  content: "Verplicht";
+  position: absolute;
+  color: var(--white);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: -80px;
 }
