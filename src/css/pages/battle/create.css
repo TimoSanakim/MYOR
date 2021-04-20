@@ -67,6 +67,10 @@ main#create {
   justify-content: center;
 }
 
+.products .content-box img {
+  width: 80px;
+  height: 60px;
+}
 .required-item:before {
   background: var(--blue);
   content: "Verplicht";
@@ -76,7 +80,7 @@ main#create {
   border-radius: 10px;
   font-weight: bold;
   font-size: 0.8em;
-  margin-top: -80px;
+  margin-top: -100px;
 }
 
 form {
