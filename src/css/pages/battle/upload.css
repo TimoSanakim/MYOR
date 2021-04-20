@@ -1,96 +1,96 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 .btn-upload {
-    display:flex;
-    margin-top: 5vh;
-    justify-content: center;
+  display: flex;
+  margin-top: 5vh;
+  justify-content: center;
 }
-
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
 
 main#upload {
-    width: 75vw;
-  }
+  width: 75vw;
+}
 .container-upload {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .contentbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding-top: 10vh;
 }
 .titelbox {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 40%;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
 }
 .previewbox {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5vw;
-    height: 100%;
-    width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  height: 100%;
+  width: 60%;
 }
 .beschrijvingBox {
-
-
-    height: 100%;
-
+  height: 100%;
 }
 
-.image{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+.previewbox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 .inputTitel {
-    border: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 100%;
-    height: 5vh;
-    font-size: 1.4rem;
-    font-family: var(--base-font);
-    padding-left: 15px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 5vh;
+  font-size: 1.4rem;
+  font-family: var(--base-font);
+  padding-left: 15px;
 }
 .titleBeschrijving {
-    padding-top: 10px;
-
+  padding-top: 10px;
 }
-.txtBeschrijving{
-    resize: none;
-    font-family: var(--base-font);
-    border: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    font-size: 1.4rem;
-    padding-left: 15px;
-    height: 100%;
-    width: 100%;
-
+.txtBeschrijving {
+  resize: none;
+  font-family: var(--base-font);
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 1.4rem;
+  padding-left: 15px;
+  height: 100%;
+  width: 100%;
 }
 p {
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
 }
 
-
+/* Header */
+.header {
+  justify-content: center;
+  padding-top: 6vh;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+}

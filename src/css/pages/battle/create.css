@@ -19,6 +19,9 @@ main#create {
 }
 
 /* Room container */
+:root {
+  --gutter: 10px;
+}
 .room {
   border-radius: 10px;
   width: 100%;
@@ -28,10 +31,34 @@ main#create {
   background-image: url(../../../img/assets/empty_room.png);
   background-size: cover;
   background-position: center center;
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: var(--gutter);
+  column-gap: var(--gutter);
+  padding: var(--gutter);
 }
-
+.grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+}
+.grid-container img {
+  height: 60px;
+}
+.grid-container .bank {
+  transform: scale(5);
+}
+.grid-container .plant {
+  transform: scale(2);
+}
+.grid-container .lamp {
+  transform: scale(3);
+}
+.grid-container .stoel {
+  transform: scale(4);
+}
 /* Controls */
 .controls {
   flex: 1;
