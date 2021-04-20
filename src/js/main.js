@@ -21,17 +21,6 @@ if ("serviceWorker" in navigator) {
   console.log("Browser: I don't support Service Workers :(");
 }
 
-// Burger menu
-burgermenu = document.getElementById("burgermenu");
-menu = document.getElementById("menu");
-body = document.querySelector("body");
-
-burgermenu.onclick = function () {
-  burgermenu.classList.toggle("open");
-  menu.classList.toggle("menu-open");
-  body.classList.toggle("overflow-hidden");
-};
-
 // Battle timer
 var timer = document.getElementById("timer");
 minutes = 10; // Time limit in minutes
@@ -49,6 +38,20 @@ var time = setInterval(function () {
   // Alert for timer
   if (counter == -1) {
     alert("Tijd is over!");
+  }
+}, 1000); // Tick down every second
+
+// Logout timer
+var logout = document.getElementById("logout-timer");
+minutes = 2; // Time limit in minutes
+counterLogout = minutes * 60; // Timer in seconds
+var logoutTimer = setInterval(function () {
+  if (counter === -1) return clearInterval(logoutTimer);
+  logout.innerHTML = secondsToMinutes(counterLogout); // Place current counter value in HTML
+  counterLogout--;
+  // Alert for timer
+  if (counterLogout == -1) {
+    alert("Je wordt uitgelogd!");
   }
 }, 1000); // Tick down every second
 
@@ -113,3 +116,14 @@ firebase.auth().onAuthStateChanged((user) => {
     // ...
   }
 });
+
+// Burger menu
+burgermenu = document.getElementById("burgermenu");
+menu = document.getElementById("menu");
+body = document.querySelector("body");
+
+burgermenu.onclick = function () {
+  burgermenu.classList.toggle("open");
+  menu.classList.toggle("menu-open");
+  body.classList.toggle("overflow-hidden");
+};
