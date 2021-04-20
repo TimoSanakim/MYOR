@@ -1,103 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MYOR Battle - Create</title>
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="../../src/css/reset.css" />
-    <link rel="stylesheet" href="../../src/css/base.css" />
-    <link rel="stylesheet" href="../../src/css/components.css" />
-    <!-- Pages CSS -->
-    <link rel="stylesheet" href="../../src/css/pages/battle/create.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- JS -->
-    <script src="../../src/js/main.js" defer></script>
-    <script src="../../service-worker.js"></script>
-    <!-- Manifest -->
-    <link rel="manifest" href="../../manifest.webmanifest" />
-  </head>
-  <body>
-    <nav class="header">
-      <img src="../../src/img/logos/logo_ikea.png" />
-    </nav>
-    <main id="create">
-      <div class="flex-container">
-        <h1>Kamer maken - Battle</h1>
-        <div class="timer">
-          <i class="far fa-clock"></i><span id="battle-timer">10:00</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYOR Battle - Create</title>
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../../src/css/reset.css" />
+  <link rel="stylesheet" href="../../src/css/base.css" />
+  <link rel="stylesheet" href="../../src/css/components.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="../../src/css/pages/battle/create.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JS -->
+  <script src="../../src/js/main.js" defer></script>
+  <script src="../../src/js/draganddrop.js" defer></script>
+  <script src="../../service-worker.js"></script>
+  <!-- Manifest -->
+  <link rel="manifest" href="../../manifest.webmanifest" />
+</head>
+
+<body>
+  <nav class="header">
+    <img src="../../src/img/logos/logo_ikea.png" />
+  </nav>
+  <main id="create">
+    <div class="flex-container">
+      <h1>Kamer maken - Battle</h1>
+      <div class="timer">
+        <i class="far fa-clock"></i>
+        <span id="battle-timer">10:00</span>
+      </div>
+    </div>
+    <div class="challenge-description">
+      <h3>De challenge</h3>
+      <p>
+        Maak een moderne woonkamer waar de volgende producten verplicht in
+        voor moeten komen:
+      </p>
+      <div class="products">
+        <div class="content-box required-item">
+          <img src="../../src/img/assets/products/bank-1.png" />
+        </div>
+        <div class="content-box required-item">
+          <img src="../../src/img/assets/products/plant.png" />
+        </div>
+        <div class="content-box required-item">
+          <img src="../../src/img/assets/products/stoel.png" />
+        </div>
+        <div class="content-box required-item">
+          <img src="../../src/img/assets/products/lamp.png" />
         </div>
       </div>
-      <div class="challenge-description">
-        <h3>De challenge</h3>
-        <p>
-          Maak een moderne woonkamer waar de volgende producten verplicht in
-          voor moeten komen:
-        </p>
-        <div class="products">
-          <div class="content-box required-item">
-            <img src="../../src/img/assets/products/bank-1.png" alt="Bank 1" />
-          </div>
-          <div class="content-box required-item">
-            <img src="../../src/img/assets/products/plant.png" alt="Plant" />
-          </div>
-          <div class="content-box required-item">
-            <img src="../../src/img/assets/products/stoel.png" alt="Stoel" />
-          </div>
-          <div class="content-box required-item">
-            <img src="../../src/img/assets/products/lamp.png" alt="Lamp" />
-          </div>
-        </div>
-      </div>
-      <div class="room">
-        <div class="controls">
+    </div>
+    <div class="room">
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <!--<div class="controls">
           <ul>
             <li><i class="fas fa-redo"></i></li>
             <li><i class="fas fa-undo"></i></li>
             <li><i class="fas fa-search-plus"></i></li>
             <li><i class="fas fa-search-minus"></i></li>
           </ul>
-        </div>
+        </div>-->
+    </div>
+    <div class="flex-container">
+      <!-- Products -->
+      <div class="product-description">
+        <h3>Producten</h3>
+        <span>
+          Verplicht
+          <i class="fas fa-chevron-down"></i>
+        </span>
       </div>
-      <div class="flex-container">
-        <!-- Products -->
-        <div class="product-description">
-          <h3>Producten</h3>
-          <span>Banken <i class="fas fa-chevron-down"></i></span>
-        </div>
-        <!-- Search -->
-        <div class="content-box search-bar">
-          <form action="">
-            <input type="text" placeholder="Zoeken naar producten.." />
-            <button type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-        </div>
+      <!-- Search -->
+      <div class="content-box search-bar">
+        <form action="">
+          <input type="text" placeholder="Zoeken naar producten.." />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
       </div>
-      <div class="products">
-        <div class="content-box required-item">
-          <img src="../../src/img/assets/products/bank-1.png" alt="Bank 1" />
-        </div>
-        <div class="content-box">
-          <img src="../../src/img/assets/products/bank-2.png" alt="Bank 2" />
-        </div>
-        <div class="content-box">
-          <img src="../../src/img/assets/products/bank-3.png" alt="Bank 3" />
-        </div>
-        <div class="content-box">
-          <img src="../../src/img/assets/products/bank-4.png" alt="Bank 4" />
-        </div>
-        <div class="content-box">
-          <img src="../../src/img/assets/products/bank-5.png" alt="Bank 5" />
-        </div>
+    </div>
+    <div class="products">
+      <div class="content-box required-item" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="img-1" class="bank" src="../../src/img/assets/products/bank-11.png" draggable="true"
+          ondragstart="drag(event)" />
       </div>
-      <a href="../upload/" class="btn btn--blue">Kamer klaar!</a>
-    </main>
-  </body>
+      <div class="content-box required-item" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="img-2" class="lamp" src="../../src/img/assets/products/lamp.png" draggable="true"
+          ondragstart="drag(event)" />
+      </div>
+      <div class="content-box required-item" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="img-3" class="stoel" src="../../src/img/assets/products/stoel.png" draggable="true"
+          ondragstart="drag(event)" />
+      </div>
+      <div class="content-box required-item" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="img-4" class="plant" src="../../src/img/assets/products/plant.png" draggable="true"
+          ondragstart="drag(event)" />
+      </div>
+    </div>
+    <a href="../upload/" class="btn btn--blue">Kamer klaar!</a>
+  </main>
+</body>
+
 </html>
