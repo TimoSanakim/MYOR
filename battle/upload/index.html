@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MYOR Battle - Upload</title>
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="../../src/css/reset.css" />
-    <link rel="stylesheet" href="../../src/css/base.css" />
-    <link rel="stylesheet" href="../../src/css/components.css" />
-    <!-- Pages CSS -->
-    <link rel="stylesheet" href="../../src/css/pages/battle/upload.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- JS -->
-    <script src="../../src/js/main.js" defer></script>
-    <script src="../../service-worker.js"></script>
-    <!-- Manifest -->
-    <link rel="manifest" href="../../manifest.webmanifest" />
-  </head>
-  <body>
-    <nav class="header">
-      <img src="../../src/img/logos/logo_ikea.png" />
-    </nav>
-    <main id="upload">
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <a href="../results/" class="btn btn--blue">Uploaden</a>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYOR Battle - Upload</title>
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../../src/css/reset.css" />
+  <link rel="stylesheet" href="../../src/css/base.css" />
+  <link rel="stylesheet" href="../../src/css/components.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="../../src/css/pages/battle/upload.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JS -->
+  <script src="../../src/js/main.js" defer></script>
+  <script src="../../service-worker.js"></script>
+  <!-- Manifest -->
+  <link rel="manifest" href="../../manifest.webmanifest" />
+</head>
+
+<body>
+  <nav class="header">
+    <img src="../../src/img/logos/logo_ikea.png" />
+  </nav>
+  <main id="upload">
+    <div class="container-upload">
+      <h1>Upload je kamer</h1>
+      <div class="contentbox">
+        <div class="titelbox">
+          <div>
+            <p>Titel</p>
+            <input class="inputTitel" type="text">
+          </div>
+          <div class="beschrijvingBox">
+            <p class="titleBeschrijving">Beschrijving</p>
+            <textarea class="txtBeschrijving" rows="4" cols="50" class="inputDescription"></textarea>
+          </div>
+        </div>
+        <div class="previewbox">
+          <p>Voorbeeld</p>
+          <div class="imagebox"></div>
+        </div>
+      </div>
+      <div class="btn-upload">
+        <a href="../results/" class="btn btn--blue">Uploaden</a>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
