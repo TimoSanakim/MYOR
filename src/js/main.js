@@ -22,36 +22,36 @@ if ("serviceWorker" in navigator) {
 }
 
 // Battle timer
-var timer = document.getElementById("timer");
-minutes = 10; // Time limit in minutes
-counter = minutes * 60; // Timer in seconds
+var timerBattle = document.getElementById("battle-timer");
+minutesBattle = 10; // Time limit in minutes
+counterBattle = minutesBattle * 60; // Timer in seconds
 function secondsToMinutes(d) {
   d = Number(d);
   var m = Math.floor((d % 3600) / 60); // Calculate minutes
   var s = Math.floor((d % 3600) % 60); // Calculate seconds
   return ("0" + m).slice(-2) + ":" + ("0" + s).slice(-2); // Format in MM:SS format
 }
-var time = setInterval(function () {
-  if (counter === -1) return clearInterval(time);
-  timer.innerHTML = secondsToMinutes(counter); // Place current counter value in HTML
-  counter--;
+var battleTimer = setInterval(function () {
+  if (counterBattle === -1) return clearInterval(battleTimer);
+  timerBattle.innerHTML = secondsToMinutes(counterBattle); // Place current counter value in HTML
+  counterBattle--;
   // Alert for timer
-  if (counter == -1) {
+  if (counterBattle == -1) {
     alert("Tijd is over!");
   }
 }, 1000); // Tick down every second
 
 // Logout timer
-var logout = document.getElementById("logout-timer");
-minutes = 2; // Time limit in minutes
-counterLogout = minutes * 60; // Timer in seconds
+var timerLogout = document.getElementById("logout-timer");
+minutesLogout = 2; // Time limit in minutes
+counterLogout = minutesLogout * 60; // Timer in seconds
 var logoutTimer = setInterval(function () {
-  if (counter === -1) return clearInterval(logoutTimer);
-  logout.innerHTML = secondsToMinutes(counterLogout); // Place current counter value in HTML
+  if (counterLogout === -1) return clearInterval(logoutTimer);
+  timerLogout.innerHTML = secondsToMinutes(counterLogout); // Place current counter value in HTML
   counterLogout--;
-  // Alert for timer
+  // Redirect / logout when timer is 0
   if (counterLogout == -1) {
-    alert("Je wordt uitgelogd!");
+    window.location.href = "/battle/";
   }
 }, 1000); // Tick down every second
 

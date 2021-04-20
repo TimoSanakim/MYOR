@@ -47,3 +47,9 @@ main {
 .or h1 {
   font-size: 30px;
 }
+
+/* Header */
+.header {
+  justify-content: center;
+  padding-top: 6vh;
+}

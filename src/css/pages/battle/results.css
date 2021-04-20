@@ -83,3 +83,9 @@ main#results {
 .timer p {
   margin-top: 10px;
 }
+
+/* Header */
+.header {
+  justify-content: center;
+  padding-top: 6vh;
+}
