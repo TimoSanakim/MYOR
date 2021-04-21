@@ -90,6 +90,7 @@ p {
 .header {
   justify-content: center;
   padding-top: 6vh;
+  background: none;
   box-sizing: content-box;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;

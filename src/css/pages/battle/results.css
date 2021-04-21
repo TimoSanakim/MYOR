@@ -88,4 +88,5 @@ main#results {
 .header {
   justify-content: center;
   padding-top: 6vh;
+  background: none;
 }
