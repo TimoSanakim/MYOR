@@ -86,27 +86,47 @@ main#create {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .content-box {
   padding: 0px;
 }
 .products .content-box {
-  width: 10%;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  height: 80px;
 }
-.products .bank-bg {
-  background-image: url(../../../img/assets/products/bank-11.png);
-  background-size: contain;
+.products .bg {
+  background-size: 60px 60px;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.products .bank-bg {
+  background-image: url(../../../img/backgrounds/bank-bg.png);
+}
+.products .stoel-bg {
+  background-image: url(../../../img/backgrounds/stoel-bg.png);
+}
+.products .lamp-bg {
+  background-image: url(../../../img/backgrounds/lamp-bg.png);
+}
+.products .plant-bg {
+  background-image: url(../../../img/backgrounds/plant-bg.png);
+}
+.products .plant-bg,
+.products .lamp-bg {
+  background-size: 30px 60px;
+}
 .products .content-box img {
+  width: 60px;
   height: 60px;
   box-sizing: border-box;
+}
+.products .content-box img.plant,
+.products .content-box img.lamp {
+  width: 30px;
 }
 .required-item:before {
   background: var(--blue);
