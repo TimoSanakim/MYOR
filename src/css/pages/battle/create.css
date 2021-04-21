@@ -24,7 +24,6 @@ main#create {
 }
 .room {
   border-radius: 10px;
-  width: 100%;
   height: 35vh;
   margin-top: 40px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -36,7 +35,10 @@ main#create {
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: var(--gutter);
   column-gap: var(--gutter);
-  padding: var(--gutter);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 .grid-container {
   display: flex;
@@ -48,7 +50,7 @@ main#create {
   height: 60px;
 }
 .grid-container .bank {
-  transform: scale(5);
+  transform: scale(3);
 }
 .grid-container .plant {
   transform: scale(2);
@@ -57,7 +59,7 @@ main#create {
   transform: scale(3);
 }
 .grid-container .stoel {
-  transform: scale(4);
+  transform: scale(3);
 }
 /* Controls */
 .controls {
@@ -86,17 +88,25 @@ main#create {
   justify-content: space-between;
   margin-top: 40px;
 }
-
+.content-box {
+  padding: 0px;
+}
 .products .content-box {
   width: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.products .content-box img {
-  width: 80px;
   height: 60px;
+}
+.products .bank-bg {
+  background-image: url(../../../img/assets/products/bank-11.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.products .content-box img {
+  height: 60px;
+  box-sizing: border-box;
 }
 .required-item:before {
   background: var(--blue);
