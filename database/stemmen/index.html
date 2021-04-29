@@ -63,6 +63,14 @@
     </main>
 
     <script>
+        var cookie = document.cookie = "name=hasvoted";
+
+
+        if (document.cookie.split(';').some((item) => item.includes('hasvoted=1'))) {
+            console.log('The cookie "reader" has "1" for value')
+        }
+
+
         const form = document.getElementById("kamer-form");
 
         // Execute function on form submit
@@ -72,6 +80,12 @@
         async function kamerMaken(event) {
 
             event.preventDefault();
+
+
+
+
+
+
 
             const kamernaam = document.getElementById("kamernaam").value;
 
@@ -98,9 +112,6 @@
                 }),
 
             }).then((res) => res.json());
-
-
-
 
 
         }
