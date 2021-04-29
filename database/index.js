@@ -13,7 +13,7 @@ const database_client = new MongoClient(database_string, {
     useUnifiedTopology: true,
 });
 database_client.connect().then(() => {
-    const myor_database = database_client.db("myor");
+    const myor_database = database_client.db("Myor");
     const kamers = myor_database.collection("kamers");
     console.log("test");
     kamers
