@@ -1,38 +1,22 @@
-const http = require("http");
-const {
-    MongoClient
-} = require("mongodb");
-const database_string =
-    "mongodb+srv://Myorman6487:HikWNhPxdVCSMMOI@myor.6scmy.mongodb.net/?retryWrites=true&w=majority";
-const hostname = "localhost";
-const port = 1234;
+const path = require("path");
 
 
-const database_client = new MongoClient(database_string, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
-database_client.connect().then(() => {
-    const myor_database = database_client.db("Myor");
-    const kamers = myor_database.collection("kamers");
-    console.log("test");
-    kamers
-        .find({}, {})
-        .toArray()
-        .then((inhoud_kamers) => {
-            console.log(inhoud_kamers);
-        });
+var express = require('express');
+var app = express();
+var bodyparser = require('body-parser');
+app.use(bodyparser.urlencoded({
+    extended: true
+}));
+app.use(bodyparser.json());
+var student = require('./routes/student');
 
-    const server = http.createServer((verzoek, antwoord) => {
-        antwoord.setHeader("Access-Control-Allow-Origin", "*");
-        console.log(
-            `${verzoek.method} Verzoek gedaan op server! -> ${verzoek.url}`
-        );
-        antwoord.statusCode = 200;
-        antwoord.setHeader("Content-Type", "text/json");
-        antwoord.end("Hallo wereld!");
-    });
-    server.listen(port, hostname, () => {
-        console.log(`Server running at http://${hostname}:${port}/`);
-    });
+app.use('/api/kamers/', student);
+app.get("*", express.static(path.dirname(require.main.filename)));
+
+
+app.listen(process.env.port || 1234, function (error) {
+    if (error)
+        console.log(error);
+
+    console.log('running server on port 1234');
 });
