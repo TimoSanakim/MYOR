@@ -1,0 +1,14 @@
+.container-user{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-user img{
+  width: 80px;
+}
+
+.container-room{
+  
+}
