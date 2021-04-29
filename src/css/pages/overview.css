@@ -92,7 +92,9 @@ h3 {
   align-items: flex-end;
   margin-bottom: -3%;
   z-index: 3;
+  padding-bottom: 10px;
 
+  overflow: scroll;
 }
 
 .arrowdropdown {
@@ -175,3 +177,47 @@ input {
   text-decoration: none;
   display: block;
 }
+
+.filtertext {
+  position: relative;
+  top: -50%;
+  margin-left: 1%;
+}
+
+.filter1 {
+  position: relative;
+  top: -65%;
+  width: 3%;
+  height: auto;
+  margin-left: 2%;
+}
+
+@media (orientation: landscape) {
+  .filter1 {
+    width: 1.5%;
+    top: -70%;
+  }
+
+  .filtertext {
+    top: -48%;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+}
+
+
+#checkbox {
+  position: relative;
+  left: -9%;
+  top: -35%;
+  margin-left: 15px;
+
+}
+
+#checkboxLabel {
+  position: relative;
+  left: -9%;
+  top: -37%;
+
+}
+
