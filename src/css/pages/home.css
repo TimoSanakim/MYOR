@@ -1,22 +1,25 @@
 main#home {
-  width: 75vw;
+  width: 85vw;
+  overflow-x: hidden;
 }
 
+
 body {
+  max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 15vh;
   padding-bottom: 15vh;
+
+  overflow-x: hidden;
 }
 
-.ikealogo {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 25%;
-  padding: 8%;
+.header {
+  max-width: 80vw;
 }
+
 .headers {
   margin-top: 5%;
 }
@@ -29,8 +32,10 @@ body {
 .box {
   position: absolute;
   top: 180px;
-  right: -10px;
+  right: 0;
   color: var(--blue);
+
+  overflow: hidden;
 }
 
 .create-box {
@@ -68,6 +73,7 @@ body {
 .flexrow1 {
   display: flex;
   margin-bottom: 10%;
+  width: 85%;
 }
 
 .flexrow2 {
@@ -81,4 +87,8 @@ body {
   margin-left: 65%;
   margin-top: -20%;
   z-index: 10;
+}
+
+html, body {
+  overflow-x: hidden;
 }
