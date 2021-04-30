@@ -34,14 +34,17 @@ window.onload = () => {
 
 function roomnumber1() {
     roomnumber = 1;
+    document.getElementById("submit").disabled = false;
 }
 
 function roomnumber2() {
     roomnumber = 2;
+    document.getElementById("submit").disabled = false;
 }
 
 function roomnumber3() {
     roomnumber = 3;
+    document.getElementById("submit").disabled = false;
 }
 
 //loading in user data

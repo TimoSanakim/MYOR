@@ -110,3 +110,7 @@ body{
 .container-user img{
   width: 80px;
 }
+
+.container-user h2{
+  padding: 5px;
+}
