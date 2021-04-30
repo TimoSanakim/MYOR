@@ -1,3 +1,6 @@
+body{
+  orientation: portrait;
+}
 
 .tophalf{
   height: 50vh;
