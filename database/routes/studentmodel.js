@@ -1,37 +1,40 @@
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 
 
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 
 
-var kamers = new Schema(
+const kamers = new Schema(
 
     {
 
         kamernaam: {
             type: String,
-            required: true
+            required: true,
+            index: true
+
         },
 
         nummer: {
             type: Number,
             required: true,
-            unique: true
-        },
-
+            unique: true,
+            index: true
+        }
     },
 
     {
         collection: "kamers"
+
     }
 
 );
 
 
 
-var smodel = mongoose.model("kamers", kamers);
+const smodel = mongoose.model("kamers", kamers);
 
 
 

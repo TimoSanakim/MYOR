@@ -124,6 +124,7 @@
                 const kamernaam = document.getElementById("kamernaam").value;
                 const nummer = document.getElementById("nummer").value;
 
+
                 // Post values as JSON data
                 const result = await fetch("/api/kamers/", {
                     method: "POST",
@@ -133,11 +134,21 @@
                     body: JSON.stringify({
                         kamernaam,
                         nummer,
+
                     }),
 
                 }).then((res) => res.json());
+                if (result.status === "ok") {
 
+                    console.log("Success");
 
+                    alert("Success");
+
+                } else {
+
+                    alert(result.error);
+
+                }
             } else {
                 alert("poop");
             }

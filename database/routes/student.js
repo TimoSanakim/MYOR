@@ -21,46 +21,66 @@ router.get('/', function (req, res) {
 });
 router.post('/', function (req, res) {
     var std = new student(req.body);
-    std.save(function (err, result) {
+    console.log(std);
+    std.save(function (error, result) {
+        console.log(error);
         res.json(result);
+        console.log(result);
     });
 });
 
 router.put('/', function (req, res) {
     res.send('{method:put}');
 });
-router.post("/", async (req, res) => {
+// router.post("/", async (req, res) => {
 
-    const {
-        kamernaam,
-        nummer
-    } = req.body;
+//     const {
+//         kamernaam,
+//         nummer
+//     } = req.body;
 
-    console.log(nummer);
-    console.log(kamernaam);
+//     console.log(nummer);
+//     console.log(kamernaam);
 
-    try {
+//     try {
 
-        const response = await kamers.create({
+//         const response = await kamers.create({
 
-            kamernaam,
+//             kamernaam,
 
-            nummer,
+//             nummer,
 
-        });
+//         });
 
-        console.log("Kamer created successfully: ", response);
+//         console.log("Kamer created successfully: ", response);
 
-    } catch (error) {
-        console.log(error);
-    }
+//     } catch (error) {
+//         console.log(error);
+//         // Display error if response is error
+
+//         if (error.code === 11000) {
+
+//             // Duplicate key errorcode
+
+//             return res.json({
+
+//                 status: "error",
+
+//                 error: "Number is not unique",
+
+//             });
+
+//         }
+
+//         throw error;
+//     }
 
 
 
-    res.json({
-        status: "ok"
+//     res.json({
+//         status: "ok"
 
-    });
+//     });
 
-});
+// });
 module.exports = router;
