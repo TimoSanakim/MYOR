@@ -37,19 +37,8 @@ body{
 .container-room-stats {
   margin-top: 10vh;
   margin-left: 10vw;
-  margin-right: 10vw;
 }
-.textStats {
-  display: flex;
-  justify-content: space-between;
-}
-.textMeubels {
-  display: flex;
-  align-items: center;
-}
-.textMeubels i {
-  margin-left: 5px;
-}
+
 .container-room-stats h3 {
   padding: 8px 0px;
 }
