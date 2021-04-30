@@ -19,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- JS -->
-    <script src="../../../src/js/main.js" defer></script>
+    <!-- <script src="../../../src/js/main.js" defer></script> -->
     <script src="../../../service-worker.js"></script>
     <!-- Manifest -->
     <link rel="manifest" href="../../../manifest.webmanifest" />
@@ -29,29 +29,109 @@
     <div class="parent">
         <div class="tophalf">
             <div class="container-user">
-                <img src="../../../src/img/assets/faces/person1.png">
-                <h2>Paul Hoekstra</h2>
-                <h3>Huiskamer</h3>
+                <img id="image-user" class="profile-pic" src="">
+                <h2 id="name-user"></h2>
+                <h3 id="room-type"></h3>
             </div>
             <div class="container-room">
-                <h1>#1</h1>
-                <img src="../../../src/img/assets/empty_room.png">
+                <h1 id="number-user"></h1>
+                <img id="image-room" src="../../../src/img/assets/empty_room_square.png">
             </div>
         </div>
         <div class="bottomhalf">
             <div class="container-buttons">
-                <button id="button1">1</button>
-                <button id="button2">2</button>
-                <button id="button3">3</button>
+                <div class="radio-toolbar">
+                    <input type="radio" id="radio1" name="radionumber" value="1">
+                    <label for="radio1">1</label>
+
+                    <input type="radio" id="radio2" name="radionumber" value="2">
+                    <label for="radio2">2</label>
+
+                    <input type="radio" id="radio3" name="radionumber" value="3">
+                    <label for="radio3">3</label> 
+                </div>
             </div>
             <div class="container-button-submit">
                 <button id="submit">Stem</button>
             </div>
             <div class="container-text">
                 <p>Stem op je favoriete kamer</p>
+                <span id="timer"></span>
+                <span id="radiocheck"></span>
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById("radio1").addEventListener("click", person1)
+        document.getElementById("radio2").addEventListener("click", person2)
+        document.getElementById("radio3").addEventListener("click", person3)
+        let seconds = 16;
+        let roomnumber = 0;
+        window.onload = () => {
+  
+
+    setInterval(function() {
+        console.log("roomnumber: "+roomnumber)
+        console.log("seconds: "+seconds)
+
+    seconds--;
+    if (seconds < 0) {
+      seconds = 15;
+
+    }
+    if(seconds==5){
+        person3();
+    }
+    if(seconds==10){
+       person2();
+    }
+    
+    if(seconds>=15){
+       person1();
+    }
+  }, 1000);
+}
+    
+function radiobuttons() { 
+            if(document.getElementById('radio1').checked) {  
+                seconds= 16;
+            }
+            else if(document.getElementById('radio2').checked) {
+                roomnumber = 2;
+                seconds= 11;
+            }
+            else if(document.getElementById('radio3').checked) {
+                seconds= 6;
+            }
+        }
+
+
+function person1() {
+    roomnumber = 1;
+        document.getElementById("image-user").src = "../../../src/img/assets/faces/person3.png";
+        document.getElementById("name-user").innerHTML = "Petra jansen";
+        document.getElementById("room-type").innerHTML = "huiskamer";
+        document.getElementById("number-user").innerHTML = "#1";
+        document.getElementById("image-room").src = "../../../src/img/assets/sofa_room.png";
+}
+function person2() {
+    roomnumber = 2;
+        document.getElementById("image-user").src = "../../../src/img/assets/faces/person2.png";
+        document.getElementById("name-user").innerHTML = "Hugo Jong";
+        document.getElementById("room-type").innerHTML = "huiskamer";
+        document.getElementById("number-user").innerHTML = "#2";
+        document.getElementById("image-room").src = "../../../src/img/assets/plant_room.png";
+}
+function person3() {
+    roomnumber = 3;
+        document.getElementById("image-user").src = "../../../src/img/assets/faces/person1.png";
+        document.getElementById("name-user").innerHTML = "Jan peters";
+        document.getElementById("room-type").innerHTML = "huiskamer";
+        document.getElementById("number-user").innerHTML = "#3";
+        document.getElementById("image-room").src = "../../../src/img/assets/chair_room.png";
+}
+
+    </script>
 </body>
 
 </html>
