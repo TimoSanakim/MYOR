@@ -1,0 +1,53 @@
+.corner-timer{
+    position: fixed;
+    padding: 20px;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.corner-timer i{
+    font-size: 30px;
+    padding-right: 10px;
+}
+.roomimage{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+.containers-players{
+    display: flex;
+    margin: 20px;
+}
+
+.containers-players img{
+    width: 160px;
+}
+
+.container-text{
+    margin-left: 20px;
+}
+
+.container-text h1{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.container-text p{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.fade {
+    animation: fadeIn 2s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
