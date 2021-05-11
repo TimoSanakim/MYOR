@@ -55,6 +55,20 @@ var logoutTimer = setInterval(function () {
   }
 }, 1000); // Tick down every second
 
+// Waiting timer
+var timerWaiting = document.getElementsByClassName('waiting-timer')[0];
+minutesWaiting = 5; // Time limit in minutes
+counterWaiting = minutesWaiting * 60; // Timer in seconds
+var waitingTimer = setInterval(function () {
+  if (counterWaiting === -1) return clearInterval(waitingTimer);
+  timerWaiting.innerHTML = secondsToMinutes(counterWaiting); // Place current counter value in HTML
+  counterWaiting--;
+  // Redirect when timer is 0
+  if (counterLogout == -1) {
+    window.location.href = "/battle/";
+  }
+}, 1000); // Tick down every second
+
 // Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBpmVBBDHScvhs26Gt_YifCxjBvcDDfroM",
