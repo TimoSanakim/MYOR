@@ -1,0 +1,16 @@
+.textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.cardContainer {
+    display:flex;
+    justify-content: space-evenly;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
