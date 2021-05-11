@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- JS -->
     <script src="../../src/js/main.js" defer></script>
-    <script src="../../src/js/draganddrop.js" defer></script>
+    <script src="../../src/js/showVotes.js" defer></script>
     <script src="../../service-worker.js"></script>
     <!-- Manifest -->
     <link rel="manifest" href="../../manifest.webmanifest" />
@@ -28,16 +28,52 @@
     </div>
     <div class="cardContainer">
         <div class="room1 card">
-            <p>Kamer 1</p>
-            <progress max="20" value="13" class="room1"></progress>
+            <h2>Kamer 1</h2>
+            <img src="../../src/img/assets/empty_room.png" alt="roomImg">
+            <div class="roomInfo">
+                <div>
+                    <p>Stemmen:</p> <p>27</p>
+                </div>
+                <div>
+                    <p>Tijdsduur:</p> <p>9:12</p>
+                </div>
+                <div>
+                    <p>Aantal meubels:</p> <p>8</p>
+                </div>
+            </div>
+            <progress max="100" value="7" id="room1"></progress>
         </div>
         <div class="room2 card">
-            <p>Kamer 2</p>
-            <progress max="20" value="17" class="room2"></progress>
+            <h2>Kamer 2</h2>
+            <img src="../../src/img/assets/empty_room.png" alt="roomImg">
+            <div class="roomInfo">
+                <div>
+                    <p>Stemmen:</p> <p>27</p>
+                </div>
+                <div>
+                    <p>Tijdsduur:</p> <p>9:12</p>
+                </div>
+                <div>
+                    <p>Aantal meubels:</p> <p>8</p>
+                </div>
+            </div>
+            <progress max="100" value="9" id="room2"></progress>
         </div>
         <div class="room3 card">
-            <p>Kamer 3</p>
-            <progress max="20" value="15" class="room3"></progress>
+            <h2>Kamer 3</h2>
+            <img src="../../src/img/assets/empty_room.png" alt="roomImg">
+            <div class="roomInfo">
+                <div>
+                    <p>Stemmen:</p> <p>27</p>
+                </div>
+                <div>
+                    <p>Tijdsduur:</p> <p>9:12</p>
+                </div>
+                <div>
+                    <p>Aantal meubels:</p> <p>8</p>
+                </div>
+            </div>
+            <progress max="100" value="4" id="room3"></progress>
         </div>
     </div>
 
