@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../../../src/css/reset.css" />
+    <link rel="stylesheet" href="../../../src/css/base.css" />
+    <link rel="stylesheet" href="../../../src/css/components.css" />
+    <!-- Pages CSS -->
+    <link rel="stylesheet" href="../../../src/css/pages/battle/vote/vote_rooms.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- JS -->
+    <!-- <script src="../../../src/js/main.js" defer></script> -->
+    <script src="../../../service-worker.js"></script>
+    <script src="../../../src/js/voting.js" defer></script>
+    <!-- Manifest -->
+    <link rel="manifest" href="../../../manifest.webmanifest" />
+  </head>
+
+<body>
+    <div class="parent">
+        <div class="tophalf">
+            <div class="container-user">
+                <img id="image-user" class="profile-pic" src="">
+                <h2 id="name-user"></h2>
+                <h3 id="room-type"></h3>
+            </div>
+            <div class="container-room">
+                <h1 id="number-user"></h1>
+                <img id="image-room" src="../../../src/img/assets/empty_room_square.png">
+            </div>
+        </div>
+        <div class="bottomhalf">
+            <div class="container-buttons">
+                <div class="radio-toolbar">
+                    <input type="radio" id="radio1" name="radionumber" value="1">
+                    <label for="radio1">1</label>
+
+                    <input type="radio" id="radio2" name="radionumber" value="2">
+                    <label for="radio2">2</label>
+
+                    <input type="radio" id="radio3" name="radionumber" value="3">
+                    <label for="radio3">3</label> 
+                </div>
+            </div>
+            <div class="container-button-submit">
+                <button id="submit" disabled>Stem</button>
+            </div>
+            <div class="container-text">
+                <p>Stem op je favoriete kamer</p>
+                <span id="timer"></span>
+                <span id="radiocheck"></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
