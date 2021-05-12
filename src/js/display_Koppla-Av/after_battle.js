@@ -6,6 +6,14 @@ var stem1 = document.getElementById("stemmenTxt_1");
 var stem2 = document.getElementById("stemmenTxt_2");
 var stem3 = document.getElementById("stemmenTxt_3");
 
+var kamerNaam1 = document.getElementById("kamernaam_1");
+var kamerNaam2 = document.getElementById("kamernaam_2");
+var kamerNaam3 = document.getElementById("kamernaam_3");
+
+var kamerNummer1 = document.getElementById("kamernummer_1");
+var kamerNummer2 = document.getElementById("kamernummer_2");
+var kamerNummer3 = document.getElementById("kamernummer_3");
+
 function dataOphalen(event) {
   fetch("/api/stemmen/", {
     method: "GET",
@@ -24,6 +32,14 @@ function dataOphalen(event) {
       stem1.innerHTML = kamers[0].kamerStemmen;
       stem2.innerHTML = kamers[1].kamerStemmen;
       stem3.innerHTML = kamers[2].kamerStemmen;
+
+      kamerNaam1.innerHTML = kamers[0].kamerNaam;
+      kamerNaam2.innerHTML = kamers[1].kamerNaam;
+      kamerNaam3.innerHTML = kamers[2].kamerNaam;
+
+      kamerNummer1.innerHTML = kamers[0].kamerNummer;
+      kamerNummer2.innerHTML = kamers[1].kamerNummer;
+      kamerNummer3.innerHTML = kamers[2].kamerNummer;
 
       const maxValue =
         kamers[0].kamerStemmen +

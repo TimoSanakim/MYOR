@@ -2,12 +2,11 @@ var express = require("express");
 var router = express.Router();
 var kamer = require("./kamerModel");
 var mongoose = require("mongoose");
+
 mongoose.connect(
   "mongodb+srv://Myorman6487:HikWNhPxdVCSMMOI@Myor.6scmy.mongodb.net/Myor?retryWrites=true&w=majority",
-
   {
     useNewUrlParser: true,
-
     useUnifiedTopology: true,
   }
 );

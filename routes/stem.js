@@ -5,10 +5,8 @@ var model = require("./kamerModel");
 
 mongoose.connect(
   "mongodb+srv://Myorman6487:HikWNhPxdVCSMMOI@Myor.6scmy.mongodb.net/Myor?retryWrites=true&w=majority",
-
   {
     useNewUrlParser: true,
-
     useUnifiedTopology: true,
   }
 );
