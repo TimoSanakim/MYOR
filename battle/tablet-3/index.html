@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kamer maken - MYOR</title>
+  <title>Tablet 3 - MYOR</title>
   <!-- Core CSS -->
   <link rel="stylesheet" href="../../src/css/reset.css" />
   <link rel="stylesheet" href="../../src/css/base.css" />
@@ -24,10 +24,9 @@
 <body>
   <!-- Content -->
   <main id="kamer-maken">
-    <h1>Kamer aanmaken</h1><br>
+    <h1>Tablet 3</h1><br>
     <form id="kamer-form">
       <input type="text" id="kamerNaam" name="kamerNaam" placeholder="Kamernaam" /><br>
-      <input type="number" id="kamerNummer" name="kamerNummer" placeholder="Kamernummer" /><br>
       <button type="submit" name="kamer" id="submit" value="Submit">
         Aanmaken
       </button>
@@ -43,7 +42,7 @@
       event.preventDefault();
 
       const kamerNaam = document.getElementById("kamerNaam").value;
-      const kamerNummer = document.getElementById("kamerNummer").value;
+      const kamerNummer = 3;
       const kamerStemmen = 0;
 
       // Post values as JSON data

@@ -16,6 +16,11 @@ const kamer = new Schema(
       unique: true,
       index: true,
     },
+    kamerStemmen: {
+      type: Number,
+      required: true,
+      index: true,
+    },
   },
 
   {

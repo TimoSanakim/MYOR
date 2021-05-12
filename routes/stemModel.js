@@ -4,16 +4,9 @@ const Schema = mongoose.Schema;
 
 const stem = new Schema(
   {
-    kamerNaam: {
-      type: String,
-      required: true,
-      index: true,
-    },
-
-    kamerNummer: {
+    stemValue: {
       type: Number,
       required: true,
-      unique: true,
       index: true,
     },
   },
