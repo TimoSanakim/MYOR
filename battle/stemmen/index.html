@@ -90,10 +90,8 @@
 
       if (cookieValue == 2) {
         event.preventDefault();
-
         const stemValue = document.querySelector('input[name="stem"]:checked').value;
-
-        // Post values as JSON data
+        console.log(stemValue);
         const result = await fetch("/api/stemmen/", {
           method: "POST",
           headers: {
@@ -113,6 +111,7 @@
         alert("User already voted");
       }
     }
+
   </script>
 </body>
 

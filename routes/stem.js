@@ -1,7 +1,8 @@
 var express = require("express");
 var router = express.Router();
-var stem = require("./stemModel");
 var mongoose = require("mongoose");
+var model = require("./kamerModel");
+
 mongoose.connect(
   "mongodb+srv://Myorman6487:HikWNhPxdVCSMMOI@Myor.6scmy.mongodb.net/Myor?retryWrites=true&w=majority",
 
@@ -17,13 +18,20 @@ router.get("/", function (req, res) {
 });
 
 router.post("/", function (req, res) {
-  var stm = new stem(req.body);
-  console.log(stm);
-  stm.save(function (error, result) {
-    console.log(error);
-    res.json(result);
-    console.log(result);
-  });
+  var kamerNummer = req.body;
+
+  model.findOneAndUpdate(
+    { kamerNummer: kamerNummer.stemValue },
+    { $inc: { kamerStemmen: 1 } },
+    { new: true },
+    (error, data) => {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log(data);
+      }
+    }
+  );
 });
 
 router.put("/", function (req, res) {
