@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Dashboard</title>
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../../../src/css/reset.css" />
+    <link rel="stylesheet" href="../../../src/css/base.css" />
+    <link rel="stylesheet" href="../../../src/css/components.css" />
+    <!-- Pages CSS -->
+    <link rel="stylesheet" href="../../../src/css/pages/battle/display_votes.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- JS -->
+    <script src="../../../src/js/main.js" defer></script>
+    <script src="../../../src/js/display_Koppla-Av/after_battle.js" defer></script>
+    <script src="../../../service-worker.js"></script>
+    <!-- Manifest -->
+    <link rel="manifest" href="../../../manifest.webmanifest" />
+</head>
+
+<body>
+    <div class="textContainer">
+        <h2>Stem op je favoriete kamer in de IKEA app.</h2>
+    </div>
+    <div class="cardContainer">
+        <div class="room1 card">
+            <h2>Kamer 1</h2>
+            <img src="../../../src/img/assets/empty_room.png" alt="roomImg">
+            <div class="roomInfo">
+                <div>
+                    <p>Stemmen:</p> <p id="stemmenTxt_1"></p>
+                </div>
+                <div>
+                    <p>Tijdsduur:</p> <p id="tijdTxt_1"></p>
+                </div>
+                <div>
+                    <p>Aantal meubels:</p> <p id="meubelsTxt_1"></p>
+                </div>
+            </div>
+            <progress max="100" value="7" id="room1"></progress>
+        </div>
+        <div class="room2 card">
+            <h2>Kamer 2</h2>
+            <img src="../../../src/img/assets/empty_room.png" alt="roomImg">
+            <div class="roomInfo">
+                <div>
+                    <p>Stemmen:</p> <p id="stemmenTxt_2"></p>
+                </div>
+                <div>
+                    <p>Tijdsduur:</p> <p id="tijdTxt_2"></p>
+                </div>
+                <div>
+                    <p>Aantal meubels:</p> <p id="meubelsTxt_2"></p>
+                </div>
+            </div>
+            <progress max="100" value="9" id="room2"></progress>
+        </div>
+        <div class="room3 card">
+            <h2>Kamer 3</h2>
+            <img src="../../../src/img/assets/empty_room.png" alt="roomImg">
+            <div class="roomInfo">
+                <div>
+                    <p>Stemmen:</p> <p id="stemmenTxt_3">27</p>
+                </div>
+                <div>
+                    <p>Tijdsduur:</p> <p id="tijdTxt_3">9:12</p>
+                </div>
+                <div>
+                    <p>Aantal meubels:</p> <p id="meubelsTxt_3">8</p>
+                </div>
+            </div>
+            <progress max="100" value="4" id="room3"></progress>
+        </div>
+    </div>
+
+</body>
+
+</html>

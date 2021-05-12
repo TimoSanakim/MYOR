@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tablet 1 - MYOR</title>
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../../src/css/reset.css" />
+  <link rel="stylesheet" href="../../src/css/base.css" />
+  <link rel="stylesheet" href="../../src/css/components.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="../../src/css/pages/battle/kamer-maken.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JS -->
+  <script src="../../src/js/main.js" defer></script>
+  <script src="../../service-worker.js"></script>
+  <!-- Manifest -->
+  <link rel="manifest" href="../../manifest.webmanifest" />
+</head>
+
+<body>
+  <!-- Content -->
+  <main id="kamer-maken">
+    <h1>Tablet 1</h1><br>
+    <form id="kamer-form">
+      <input type="text" id="kamerNaam" name="kamerNaam" placeholder="Kamernaam" /><br>
+      <button type="submit" name="kamer" id="submit" value="Submit">
+        Aanmaken
+      </button>
+    </form>
+  </main>
+  <script>
+    // Get aanmaak form
+    const aanmaakForm = document.getElementById("kamer-form");
+
+    // Execute function on form submit
+    aanmaakForm.addEventListener("submit", kamerMaken);
+    async function kamerMaken(event) {
+      event.preventDefault();
+
+      const kamerNaam = document.getElementById("kamerNaam").value;
+      const kamerNummer = 1;
+      const kamerStemmen = 0;
+
+      // Post values as JSON data
+      const result = await fetch("/api/kamerMaken/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          kamerNaam,
+          kamerNummer,
+          kamerStemmen,
+        }),
+      }).then((res) => res.json());
+      if (result.status === "ok") {
+        console.log("Success");
+        alert("Success");
+      } else {
+        alert(result.error);
+      }
+    }
+  </script>
+</body>
+
+</html>
