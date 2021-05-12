@@ -67,7 +67,6 @@
     function checkCookie() {
       var user = getCookie("username");
       if (user != 1) {
-        alert("Welcome again " + user);
         setCookie("username", 1, 30);
       } else {
         setCookie("username", 2, 30);

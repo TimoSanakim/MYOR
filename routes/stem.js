@@ -5,16 +5,14 @@ var model = require("./kamerModel");
 
 mongoose.connect(
   "mongodb+srv://Myorman6487:HikWNhPxdVCSMMOI@Myor.6scmy.mongodb.net/Myor?retryWrites=true&w=majority",
-
   {
     useNewUrlParser: true,
-
     useUnifiedTopology: true,
   }
 );
 
-router.get("/", function (req, res) {
-  res.send("{method:get}");
+router.get("/", (req, res) => {
+  model.find().then((results) => res.json(results));
 });
 
 router.post("/", function (req, res) {
