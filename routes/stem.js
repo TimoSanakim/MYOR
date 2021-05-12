@@ -13,8 +13,8 @@ mongoose.connect(
   }
 );
 
-router.get("/", function (req, res) {
-  res.send("{method:get}");
+router.get("/", (req, res) => {
+  model.find().then((results) => res.json(results));
 });
 
 router.post("/", function (req, res) {
