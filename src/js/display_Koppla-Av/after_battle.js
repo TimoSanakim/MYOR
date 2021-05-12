@@ -1,15 +1,19 @@
-var bar1 = document.getElementById("room1");
-var bar2 = document.getElementById("room2");
-var bar3 = document.getElementById("room3");
 
 setInterval(function () {
-    if(bar3.value + bar1.value + bar2.value == 101){
+    var bar1 = document.getElementById("room1");
+    var bar2 = document.getElementById("room2");
+    var bar3 = document.getElementById("room3");
+
+    if(bar3.value + bar1.value + bar2.value >= 100){
         return;
     }
     else{
-        bar3.value += 1;
+        /* Stop hier het aantal stemmen in van persoon 1,2 en 3. */
+
         bar1.value += 1;
         bar2.value += 1;
+        bar3.value += 1;
+
     }
 }, 100);
 
