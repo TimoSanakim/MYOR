@@ -29,3 +29,23 @@ function fill() {
     document.getElementById("person3image").src="";
     document.getElementById("participate3").innerHTML="";
 }
+
+// Waiting timer
+var timerWaiting = document.getElementById("waiting-timer");
+minutesWaiting = 10; // Time limit in minutes
+counterWaiting = minutesWaiting * 60; // Timer in seconds
+function secondsToMinutes(d) {
+  d = Number(d);
+  var m = Math.floor((d % 3600) / 60); // Calculate minutes
+  var s = Math.floor((d % 3600) % 60); // Calculate seconds
+  return ("0" + m).slice(-2) + ":" + ("0" + s).slice(-2); // Format in MM:SS format
+}
+var waitingTimer = setInterval(function () {
+  if (counterWaiting === -1) return clearInterval(waitingTimer);
+  timerWaiting.innerHTML = secondsToMinutes(counterWaiting); // Place current counter value in HTML
+  counterWaiting--;
+  // Alert for timer
+  if (counterWaiting == -1) {
+    window.location.href = "/battle/display_votes/during_battle";
+  }
+}, 1000); // Tick down every second
