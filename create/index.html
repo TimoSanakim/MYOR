@@ -1,152 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create - MYOR</title>
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="../src/css/reset.css" />
-    <link rel="stylesheet" href="../src/css/base.css" />
-    <link rel="stylesheet" href="../src/css/components.css" />
-    <!-- Pages CSS -->
-    <link rel="stylesheet" href="../src/css/pages/create.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- JS -->
-    <script src="../src/js/main.js" defer></script>
-    <script src="../service-worker.js"></script>
-    <!-- Manifest -->
-    <link rel="manifest" href="../manifest.webmanifest" />
-  </head>
-  <body>
-    <!-- Nav -->
-    <nav class="header">
-      <a href="../home/"><img src="../src/img/logos/logo_ikea.png" /></a>
-      <div id="burgermenu" class="">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-    <!-- Overlay -->
-    <div id="menu">
-      <div class="menucontainer">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create - MYOR</title>
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../src/css/reset.css" />
+  <link rel="stylesheet" href="../src/css/base.css" />
+  <link rel="stylesheet" href="../src/css/components.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="../src/css/pages/create.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JS -->
+  <script src="../src/js/main.js" defer></script>
+  <script src="../service-worker.js"></script>
+  <!-- Manifest -->
+  <link rel="manifest" href="../manifest.webmanifest" />
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="header">
+    <a href="../home/"><img src="../src/img/logos/logo_ikea.png" /></a>
+    <div id="burgermenu" class="">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <!-- Overlay -->
+  <div id="menu">
+    <div class="menucontainer">
+      <ul>
+        <li class="menu-option">
+          <a href="#" class="menu-link">Ontwerpen</a><i class="fas fa-chevron-right arrow"></i>
+        </li>
+        <li class="menu-option">
+          <a href="#" class="menu-link">Inspiratie</a><i class="fas fa-chevron-right arrow"></i>
+        </li>
+        <li class="menu-option">
+          <a href="#" class="menu-link">Profiel</a><i class="fas fa-chevron-right arrow"></i>
+        </li>
+        <li class="menu-option">
+          <a href="#" class="menu-link">Instellingen</a><i class="fas fa-chevron-right arrow"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Content -->
+  <main id="create">
+    <h1>Kamer maken</h1>
+    <div class="room">
+      <div class="controls">
         <ul>
-          <li class="menu-option">
-            <a href="#" class="menu-link">Ontwerpen</a
-            ><i class="fas fa-chevron-right arrow"></i>
-          </li>
-          <li class="menu-option">
-            <a href="#" class="menu-link">Inspiratie</a
-            ><i class="fas fa-chevron-right arrow"></i>
-          </li>
-          <li class="menu-option">
-            <a href="#" class="menu-link">Profiel</a
-            ><i class="fas fa-chevron-right arrow"></i>
-          </li>
-          <li class="menu-option">
-            <a href="#" class="menu-link">Instellingen</a
-            ><i class="fas fa-chevron-right arrow"></i>
-          </li>
+          <li><i class="fas fa-redo"></i></li>
+          <li><i class="fas fa-undo"></i></li>
+          <li><i class="fas fa-search-plus"></i></li>
+          <li><i class="fas fa-search-minus"></i></li>
+          <li><i class="far fa-save"></i></li>
         </ul>
       </div>
     </div>
-    <!-- Content -->
-    <main id="create">
-      <h1>Kamer maken</h1>
-      <div class="room">
-        <div class="controls">
-          <ul>
-            <li><i class="fas fa-redo"></i></li>
-            <li><i class="fas fa-undo"></i></li>
-            <li><i class="fas fa-search-plus"></i></li>
-            <li><i class="fas fa-search-minus"></i></li>
-            <li><i class="far fa-save"></i></li>
-          </ul>
+    <!-- Products -->
+    <h3>Producten</h3>
+    <span>Banken <i class="fas fa-chevron-down"></i></span>
+    <div class="products">
+      <div class="content-box highlighted-item">
+        <img src="../src/img/assets/products/bank-1.png" alt="Bank 1" />
+      </div>
+      <div class="content-box highlighted-item">
+        <img src="../src/img/assets/products/bank-2.png" alt="Bank 2" />
+      </div>
+      <div class="content-box">
+        <img src="../src/img/assets/products/bank-3.png" alt="Bank 3" />
+      </div>
+      <div class="content-box">
+        <img src="../src/img/assets/products/bank-4.png" alt="Bank 4" />
+      </div>
+      <div class="content-box">
+        <img src="../src/img/assets/products/bank-5.png" alt="Bank 5" />
+      </div>
+    </div>
+    <div class="products">
+      <div class="content-box highlighted-item">
+        <img src="../src/img/assets/products/bank-6.png" alt="Bank 6" />
+      </div>
+      <div class="content-box highlighted-item">
+        <img src="../src/img/assets/products/bank-7.png" alt="Bank 7" />
+      </div>
+      <div class="content-box">
+        <img src="../src/img/assets/products/bank-8.png" alt="Bank 8" />
+      </div>
+      <div class="content-box">
+        <img src="../src/img/assets/products/bank-9.png" alt="Bank 9" />
+      </div>
+      <div class="content-box">
+        <img src="../src/img/assets/products/bank-10.png" alt="Bank 10" />
+      </div>
+    </div>
+    <!-- Search -->
+    <div class="content-box search-bar">
+      <form action="">
+        <input type="text" placeholder="Zoeken naar producten.." />
+        <button type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <!-- Room shape-->
+    <h3>Kamervorm</h3>
+    <div class="shapes">
+      <div class="content-box">
+        <img src="../src/img/assets/shapes/shape-1.png" alt="Shape 1" />
+      </div>
+      <div class="content-box">
+        <img src="../src/img/assets/shapes/shape-2.png" alt="Shape 2" />
+      </div>
+      <div class="content-box">
+        <img src="../src/img/assets/shapes/shape-3.png" alt="Shape 3" />
+      </div>
+      <div class="content-box">
+        <img src="../src/img/assets/shapes/shape-3.png" alt="Shape 4" />
+      </div>
+    </div>
+    <!-- Measurements -->
+    <h3>Afmetingen (in mm)</h3>
+    <div class="measurements">
+      <div class="measurement-group">
+        <p>Muur A</p>
+        <div class="content-box">
+          <input type="number" placeholder="Afmeting A" />
         </div>
       </div>
-      <!-- Products -->
-      <h3>Producten</h3>
-      <span>Banken <i class="fas fa-chevron-down"></i></span>
-      <div class="products">
-        <div class="content-box highlighted-item">
-          <img src="../src/img/assets/products/bank-1.png" alt="Bank 1" />
-        </div>
-        <div class="content-box highlighted-item">
-          <img src="../src/img/assets/products/bank-2.png" alt="Bank 2" />
-        </div>
+      <div class="measurement-group">
+        <p>Muur B</p>
         <div class="content-box">
-          <img src="../src/img/assets/products/bank-3.png" alt="Bank 3" />
-        </div>
-        <div class="content-box">
-          <img src="../src/img/assets/products/bank-4.png" alt="Bank 4" />
-        </div>
-        <div class="content-box">
-          <img src="../src/img/assets/products/bank-5.png" alt="Bank 5" />
+          <input type="number" placeholder="Afmeting B" />
         </div>
       </div>
-      <div class="products">
-        <div class="content-box highlighted-item">
-          <img src="../src/img/assets/products/bank-6.png" alt="Bank 6" />
-        </div>
-        <div class="content-box highlighted-item">
-          <img src="../src/img/assets/products/bank-7.png" alt="Bank 7" />
-        </div>
-        <div class="content-box">
-          <img src="../src/img/assets/products/bank-8.png" alt="Bank 8" />
-        </div>
-        <div class="content-box">
-          <img src="../src/img/assets/products/bank-9.png" alt="Bank 9" />
-        </div>
-        <div class="content-box">
-          <img src="../src/img/assets/products/bank-10.png" alt="Bank 10" />
-        </div>
-      </div>
-      <!-- Search -->
-      <div class="content-box search-bar">
-        <form action="">
-          <input type="text" placeholder="Zoeken naar producten.." />
-          <button type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-      </div>
-      <!-- Room shape-->
-      <h3>Kamervorm</h3>
-      <div class="shapes">
-        <div class="content-box">
-          <img src="../src/img/assets/shapes/shape-1.png" alt="Shape 1" />
-        </div>
-        <div class="content-box">
-          <img src="../src/img/assets/shapes/shape-2.png" alt="Shape 2" />
-        </div>
-        <div class="content-box">
-          <img src="../src/img/assets/shapes/shape-3.png" alt="Shape 3" />
-        </div>
-        <div class="content-box">
-          <img src="../src/img/assets/shapes/shape-3.png" alt="Shape 4" />
-        </div>
-      </div>
-      <!-- Measurements -->
-      <h3>Afmetingen (in mm)</h3>
-      <div class="measurements">
-        <div class="measurement-group">
-          <p>Muur A</p>
-          <div class="content-box">
-            <input type="number" placeholder="Afmeting A" />
-          </div>
-        </div>
-        <div class="measurement-group">
-          <p>Muur B</p>
-          <div class="content-box">
-            <input type="number" placeholder="Afmeting B" />
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>
