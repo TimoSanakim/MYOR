@@ -9,7 +9,11 @@ const kamer = new Schema(
       required: true,
       index: true,
     },
-
+    kamerBeschrijving: {
+      type: String,
+      required: true,
+      index: true,
+    },
     kamerNummer: {
       type: Number,
       required: true,
