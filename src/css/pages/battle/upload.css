@@ -47,7 +47,9 @@ main#upload {
 .beschrijvingBox {
   height: 100%;
 }
-
+button {
+  border: none;
+}
 .previewbox img {
   width: 100%;
   height: 100%;

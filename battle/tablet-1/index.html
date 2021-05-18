@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../../src/css/base.css" />
   <link rel="stylesheet" href="../../src/css/components.css" />
   <!-- Pages CSS -->
-  <link rel="stylesheet" href="../../src/css/pages/battle/kamer-maken.css" />
+  <link rel="stylesheet" href="../../src/css/pages/battle/upload.css" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- JS -->
@@ -23,25 +23,47 @@
 
 <body>
   <!-- Content -->
-  <main id="kamer-maken">
-    <h1>Tablet 1</h1><br>
-    <form id="kamer-form">
-      <input type="text" id="kamerNaam" name="kamerNaam" placeholder="Kamernaam" /><br>
-      <button type="submit" name="kamer" id="submit" value="Submit">
-        Aanmaken
-      </button>
+  <nav class="header">
+    <img src="../../src/img/logos/logo_ikea.png" />
+  </nav>
+  <main id="upload">
+
+    <h1>Upload je kamer</h1>
+    <form id="aanmaakKamerForm">
+      <div class="contentbox">
+        <div class="titelbox">
+          <div>
+            <p>Kamer naam</p>
+            <input class="inputTitel" id="kamerNaam" type="text">
+          </div>
+          <p class="titleBeschrijving">Beschrijving</p>
+          <div class="beschrijvingBox">
+
+            <textarea class="txtBeschrijving" rows="4" cols="50" class="inputDescription"></textarea>
+          </div>
+        </div>
+
+        <div class="previewbox">
+          <p>Voorbeeld</p>
+          <img src="../../src/img/assets/empty_room.png">
+        </div>
+      </div>
+      <div class="btn-upload">
+        <button class="btn btn--blue">Uploaden</a>
+      </div>
     </form>
   </main>
   <script>
     // Get aanmaak form
-    const aanmaakForm = document.getElementById("kamer-form");
+    const aanmaakForm = document.getElementById("aanmaakKamerForm");
 
     // Execute function on form submit
     aanmaakForm.addEventListener("submit", kamerMaken);
     async function kamerMaken(event) {
       event.preventDefault();
-
+      
       const kamerNaam = document.getElementById("kamerNaam").value;
+      const kamerBeschrijving = document.getElementById("kamerDescription").value;
       const kamerNummer = 1;
       const kamerStemmen = 0;
 
