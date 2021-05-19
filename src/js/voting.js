@@ -1,8 +1,8 @@
-//variables for countdown system and roomnumber
+// Variables for countdown system and roomnumber
 let seconds = 16;
 let roomnumber = 0;
 
-//eventlisteners for each radiobutton
+// Eventlisteners for each radiobutton
 document.getElementById("radio1").addEventListener("click", person1);
 document.getElementById("radio2").addEventListener("click", person2);
 document.getElementById("radio3").addEventListener("click", person3);
@@ -11,7 +11,7 @@ document.getElementById("radio1").addEventListener("click", roomnumber1);
 document.getElementById("radio2").addEventListener("click", roomnumber2);
 document.getElementById("radio3").addEventListener("click", roomnumber3);
 
-//changing the user data depending on how many seconds have past. (5 seconds per user)
+// Changing the userdata depending on how many seconds have passed. (5 seconds per user)
 window.onload = () => {
   setInterval(function () {
     console.log("roomnumber: " + roomnumber);
@@ -47,7 +47,7 @@ function roomnumber3() {
   document.getElementById("submit").disabled = false;
 }
 
-//loading in user data
+// Static userdata content fill
 function person1() {
   document.getElementById("image-user").src =
     "../../../src/img/assets/faces/person3.png";

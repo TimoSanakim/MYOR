@@ -1,23 +1,26 @@
+// Carousel slider
 var myIndex = 0;
 carousel();
 function carousel() {
   var i;
   var x = document.getElementsByClassName("slide");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    x[i].style.display = "none"; // Hide old element
   }
   myIndex++;
   if (myIndex > x.length) {
     myIndex = 1;
   }
-  x[myIndex - 1].style.display = "block";
+  x[myIndex - 1].style.display = "block"; // Show new element
   setTimeout(carousel, 10000); // Change screen every 10 seconds
 }
 
+// Execute fill function on page load
 window.addEventListener("load", (event) => {
   fill();
 });
 
+// Static content fills
 function fill() {
   document.getElementById("person1").innerHTML = "Gert Geritson";
   document.getElementById("person1image").src =

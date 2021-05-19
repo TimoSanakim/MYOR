@@ -1,4 +1,7 @@
-function loadingResults() {
-  window.location.href = "../vote/after-battle/";
+// Redirect function for results
+function loadingPlayers() {
+  window.location.href = "../vote/after-battle"; // Redirect to next page
 }
-setTimeout(loadingResults, 3000);
+
+// Execute after 3 seconds
+setTimeout(loadingPlayers, 3000);

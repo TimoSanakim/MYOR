@@ -1,3 +1,4 @@
+// Variable definitions
 var bar1 = document.getElementById("room1");
 var bar2 = document.getElementById("room2");
 var bar3 = document.getElementById("room3");
@@ -14,6 +15,7 @@ var kamerNummer1 = document.getElementById("kamernummer_1");
 var kamerNummer2 = document.getElementById("kamernummer_2");
 var kamerNummer3 = document.getElementById("kamernummer_3");
 
+// Get data from database
 function dataOphalen(event) {
   fetch("/api/stemmen/", {
     method: "GET",
@@ -23,8 +25,7 @@ function dataOphalen(event) {
   })
     .then((res) => res.json())
     .then((kamers) => {
-      console.log(kamers);
-
+      // Set value to database values
       bar1.value = kamers[0].kamerStemmen;
       bar2.value = kamers[1].kamerStemmen;
       bar3.value = kamers[2].kamerStemmen;
@@ -52,10 +53,12 @@ function dataOphalen(event) {
     });
 }
 
+// Refresh data every second
 setInterval(function () {
   dataOphalen();
 }, 1000);
 
+// Static content fills
 function txtFill() {
   document.getElementById("tijdTxt_1").innerHTML = "9:11";
   document.getElementById("tijdTxt_2").innerHTML = "9:40";
