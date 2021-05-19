@@ -47,6 +47,10 @@
   font-size: 30px;
 }
 
+#person1image, #person2image, #person3image {
+  border-radius: 50%;
+}
+
 .fade {
   animation: fadeIn 2s;
 }
