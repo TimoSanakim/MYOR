@@ -33,6 +33,7 @@ main#upload {
   align-items: center;
   height: 50vh;
   padding-top: 10vh;
+  box-sizing: border-box;
 }
 
 .titelbox {
@@ -56,6 +57,7 @@ main#upload {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .previewbox img {
@@ -64,6 +66,7 @@ button {
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .inputTitel {
