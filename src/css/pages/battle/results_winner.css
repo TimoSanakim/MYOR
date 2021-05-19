@@ -57,3 +57,7 @@
 .kamernaam-winner {
   font-size: 0.9em;
 }
+
+.roomImg {
+  border-radius: 50%;
+}
