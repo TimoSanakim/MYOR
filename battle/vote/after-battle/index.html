@@ -17,6 +17,7 @@
     <!-- JS -->
     <script src="../../../src/js/main.js" defer></script>
     <script src="../../../src/js/display_Koppla-Av/after_battle.js" defer></script>
+    <script src="../../../src/js/resultTimer.js" defer></script>
     <script src="../../../service-worker.js"></script>
     <!-- Manifest -->
     <link rel="manifest" href="../../../manifest.webmanifest" />
@@ -25,6 +26,7 @@
 <body>
     <div class="textContainer">
         <h2>Stem op je favoriete kamer in de IKEA app.</h2>
+        <span id="result-timer">02:00</span>
     </div>
     <div class="cardContainer">
         <div class="room1 card">
@@ -74,15 +76,15 @@
             <div class="roomInfo">
                 <div>
                     <p>Stemmen:</p>
-                    <p id="stemmenTxt_3">27</p>
+                    <p id="stemmenTxt_3"></p>
                 </div>
                 <div>
                     <p>Tijdsduur:</p>
-                    <p id="tijdTxt_3">9:12</p>
+                    <p id="tijdTxt_3"></p>
                 </div>
                 <div>
                     <p>Aantal meubels:</p>
-                    <p id="meubelsTxt_3">8</p>
+                    <p id="meubelsTxt_3"></p>
                 </div>
             </div>
             <progress value="0" id="room3"></progress>

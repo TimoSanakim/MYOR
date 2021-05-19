@@ -5,17 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MYOR Battle - Loading results</title>
+  <title>Vote</title>
+
   <!-- Core CSS -->
   <link rel="stylesheet" href="../../src/css/reset.css" />
   <link rel="stylesheet" href="../../src/css/base.css" />
   <link rel="stylesheet" href="../../src/css/components.css" />
   <!-- Pages CSS -->
-  <link rel="stylesheet" href="../../src/css/pages/battle/loading.css" />
+  <link rel="stylesheet" href="../../src/css/pages/battle/vote/input_pin.css" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- JS -->
-  <script src="../../src/js/loadResults.js" defer></script>
   <script src="../../src/js/main.js" defer></script>
   <script src="../../service-worker.js"></script>
   <!-- Manifest -->
@@ -23,13 +23,22 @@
 </head>
 
 <body>
-  <main id="loading">
-    <img src="../../src/img/assets/Myor-tablet.png" class="loading_bg" alt="myor-background">
-    <div class="containertext">
-      <h1 class="h1loading">Wachten tot iedereen klaar is..</h1>
+  <div class="tophalf">
+    <img src="../../src/img/logos/logo_myor.png" />
+  </div>
+  <div class="bottomhalf">
+    <div class="container">
+      <div class="container-input">
+        <input type="text" placeholder="Voer pin in" />
+      </div>
+      <div class="container-button">
+        <a class="button" href="vote/">Enter</a>
+      </div>
+      <div class="container-text">
+        <p>De code staat op het scherm</p>
+      </div>
     </div>
-
-  </main>
+  </div>
 </body>
 
 </html>

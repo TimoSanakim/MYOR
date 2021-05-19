@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vote</title>
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../../../src/css/reset.css" />
+  <link rel="stylesheet" href="../../../src/css/base.css" />
+  <link rel="stylesheet" href="../../../src/css/components.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="../../../src/css/pages/battle/vote/vote_rooms.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JS -->
+  <!-- <script src="../../../src/js/main.js" defer></script> -->
+  <script src="../../../service-worker.js"></script>
+  <script src="../../../src/js/voting.js" defer></script>
+  <!-- Manifest -->
+  <link rel="manifest" href="../../../manifest.webmanifest" />
+</head>
+
+<body>
+  <div class="parent">
+    <div class="tophalf">
+      <div class="container-user">
+        <img id="image-user" class="profile-pic" src="" />
+        <h2 id="name-user"></h2>
+        <h3 id="room-type"></h3>
+      </div>
+      <div class="container-room">
+        <h1 id="number-user"></h1>
+        <img id="image-room" src="../../../src/img/assets/empty_room_square.png" />
+      </div>
+    </div>
+    <div class="bottomhalf">
+      <form id="stem-form">
+        <div class="container-buttons">
+          <div class="radio-toolbar">
+            <input type="radio" id="radio1" name="stem" value="1" />
+            <label for="radio1">1</label>
+            <input type="radio" id="radio2" name="stem" value="2" />
+            <label for="radio2">2</label>
+            <input type="radio" id="radio3" name="stem" value="3" />
+            <label for="radio3">3</label>
+          </div>
+        </div>
+        <div class="container-button-submit">
+          <button type="submit" name="stemSubmit" id="submit" value="Submit">
+            Stemmen
+          </button>
+        </div>
+      </form>
+      <div class="container-text">
+        <p>Stem op je favoriete kamer</p>
+        <span id="timer"></span>
+        <span id="radiocheck"></span>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Set cookie
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+      var expires = "expires=" + d.toGMTString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    // Set cookie value
+    setCookie("username", 1, 30);
+
+    // Get cookie
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == " ") {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    // Check cookie
+    function checkCookie() {
+      var user = getCookie("username");
+      if (user != 1) {
+        setCookie("username", 1, 30);
+      } else {
+        setCookie("username", 2, 30);
+      }
+    }
+
+    // Get form
+    const stemForm = document.getElementById("stem-form");
+
+    // Execute function on form submit
+    stemForm.addEventListener("submit", stemmen);
+    async function stemmen(event) {
+      window.location.href = "../loading/";
+      // Check cookie
+      checkCookie();
+
+      const cookieValue = document.cookie
+        .split("; ")
+        .find((row) => row.startsWith("username="))
+        .split("=")[1];
+
+      if (cookieValue == 2) {
+        event.preventDefault();
+        const stemValue = document.querySelector(
+          'input[name="stem"]:checked'
+        ).value;
+        console.log(stemValue);
+        const result = await fetch("/api/stemmen/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            stemValue,
+          }),
+        }).then((res) => res.json());
+        if (result.status === "ok") {
+          console.log("Success");
+          alert("Success");
+        } else {
+          alert(result.error);
+        }
+
+      } else {
+        alert("User already voted");
+      }
+
+    }
+  </script>
+</body>
+
+</html>

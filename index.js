@@ -17,6 +17,9 @@ app.use("/api/kamerMaken/", kamer);
 var stem = require("./routes/stem");
 app.use("/api/stemmen/", stem);
 
+var reset = require("./routes/reset");
+app.use("/api/reset/", reset);
+
 app.get("*", express.static(path.dirname(require.main.filename)));
 
 app.listen(process.env.port || 1234, function (error) {

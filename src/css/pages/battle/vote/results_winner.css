@@ -1,8 +1,4 @@
-body{
-  orientation: portrait;
-}
-
-.container-user{
+.container-user {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,23 +7,23 @@ body{
   padding: 25px 0px;
 }
 
-.container-user img{
+.container-user img {
   width: 80px;
   padding: 10px 0px;
 }
 
-.container-room img{
+.container-room img {
   width: 100%;
   max-width: 100%;
 }
 
-.container-room{
-  display:flex;
+.container-room {
+  display: flex;
   width: 100vw;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
-.nrUser{
+.nrUser {
   position: absolute;
   right: 15px;
   top: 230px;
