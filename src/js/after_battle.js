@@ -60,9 +60,9 @@ function txtFill() {
   document.getElementById("tijdTxt_1").innerHTML = "9:11";
   document.getElementById("tijdTxt_2").innerHTML = "9:40";
   document.getElementById("tijdTxt_3").innerHTML = "8:23";
-
   document.getElementById("meubelsTxt_1").innerHTML = "6";
   document.getElementById("meubelsTxt_2").innerHTML = "8";
   document.getElementById("meubelsTxt_3").innerHTML = "5";
 }
+
 txtFill();

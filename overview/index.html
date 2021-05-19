@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overview - MYOR</title> 
+  <title>Overview - MYOR</title>
   <!-- Core CSS -->
   <link rel="stylesheet" href="../src/css/reset.css" />
   <link rel="stylesheet" href="../src/css/base.css" />
@@ -53,58 +53,40 @@
   <!-- Content -->
   <main id="overview">
     <h1>Overzicht</h1>
-
     <div class="alloptions">
       <input type="email" name="Email" id="emailInput" placeholder="Zoeken.." class="search">
-
       <div id="sort" onclick="whendropdown()">
-
         <p id="blocks1">Relevant </p>
         <p id="blocks2">Meest recent</p>
         <p id="blocks3">populair</p>
         <p id="blocks4">testenene</p>
         <p id="blocks5">boterham</p>
-
       </div>
-
       <div id="filter">
         <img class="filter1" src="../src/img/assets/icons/filter1.png" />
         <h3 class="filtertext">Filter</h3>
-        
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
         <label for="checkbox1" id="checkboxLabel">Huiskamer</label>
-
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
         <label for="checkbox1" id="checkboxLabel">Balkon</label>
-        
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
         <label for="checkbox1" id="checkboxLabel">Zolder</label>
-
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
-        <label for="checkbox1" id="checkboxLabel">Slaapkamer</label> 
-
+        <label for="checkbox1" id="checkboxLabel">Slaapkamer</label>
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
-        <label for="checkbox1" id="checkboxLabel">Slaapkamer</label> 
-
-        
+        <label for="checkbox1" id="checkboxLabel">Slaapkamer</label>
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
         <label for="checkbox1" id="checkboxLabel">Badkamer</label>
-
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
         <label for="checkbox1" id="checkboxLabel">Tuin</label>
-
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
         <label for="checkbox1" id="checkboxLabel">Gang</label>
-
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
         <label for="checkbox1" id="checkboxLabel">Keuken</label>
-
         <input type="checkbox" id="checkbox" name="checkbox1" value="Huiskamer">
         <label for="checkbox1" id="checkboxLabel">Keuken</label>
-     
       </div>
     </div>
-
     <div class="rooms">
       <div class="room">
       </div>
@@ -131,9 +113,7 @@
       <div class="room">
       </div>
     </div>
-
   </main>
-
   <script>
     function whendropdown() {
       var x = document.getElementById('blocks2');
@@ -142,27 +122,18 @@
       } else {
         x.style.display = 'none';
       }
-
-
-
       var y = document.getElementById('blocks3');
       if (y.style.display === 'none') {
         y.style.display = 'block';
       } else {
         y.style.display = 'none';
       }
-
-
-
       var u = document.getElementById('blocks4');
       if (u.style.display === 'none') {
         u.style.display = 'block';
       } else {
         u.style.display = 'none';
       }
-
-
-
       var i = document.getElementById('blocks5');
       if (i.style.display === 'none') {
         i.style.display = 'block';

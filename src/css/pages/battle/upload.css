@@ -3,11 +3,13 @@
   margin-top: 5vh;
   justify-content: center;
 }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   align-items: center;
@@ -19,6 +21,7 @@ body {
 main#upload {
   width: 75vw;
 }
+
 .container-upload {
   height: 100%;
   width: 100%;
@@ -31,12 +34,14 @@ main#upload {
   height: 50vh;
   padding-top: 10vh;
 }
+
 .titelbox {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 40%;
 }
+
 .previewbox {
   display: flex;
   flex-direction: column;
@@ -44,12 +49,15 @@ main#upload {
   height: 100%;
   width: 60%;
 }
+
 .beschrijvingBox {
   height: 100%;
 }
+
 button {
   border: none;
 }
+
 .previewbox img {
   width: 100%;
   height: 100%;
@@ -57,6 +65,7 @@ button {
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
+
 .inputTitel {
   border: none;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -67,9 +76,11 @@ button {
   font-family: var(--base-font);
   padding-left: 15px;
 }
+
 .titleBeschrijving {
   padding-top: 10px;
 }
+
 .txtBeschrijving {
   resize: none;
   font-family: var(--base-font);
@@ -81,6 +92,7 @@ button {
   height: 100%;
   width: 100%;
 }
+
 p {
   font-size: 1.4rem;
   font-weight: bold;

@@ -207,7 +207,6 @@
 }
 
 /* preloader css loading screen animation */
-
 .preloader {
   display: flex;
   justify-content: center;
@@ -227,7 +226,6 @@
 .preloader h2 {
   color: rgba(70, 70, 70, 0.247);
   position: absolute;
-
   animation: fadetext 5s;
 }
 
@@ -346,7 +344,6 @@
 }
 
 /* background-image: url("src/img/logos/logo_myor.png"); */
-
 .squaretran {
   left: 300%;
   background-color: var(--blue);

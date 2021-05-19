@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var kamer = require("./kamerModel");
+var kamer = require("./models/kamerModel");
 var mongoose = require("mongoose");
 
 mongoose.connect(
