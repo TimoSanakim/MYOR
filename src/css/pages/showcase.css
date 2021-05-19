@@ -43,9 +43,11 @@ b {
   display: flex;
   align-items: center;
 }
+
 .roomstat-item {
   margin-right: 30px;
 }
+
 .imageroom {
   width: 100%;
   max-height: 100%;

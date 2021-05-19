@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote</title>
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../../../src/css/reset.css" />
+  <link rel="stylesheet" href="../../../src/css/base.css" />
+  <link rel="stylesheet" href="../../../src/css/components.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="../../../src/css/pages/battle/results_winner.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JS -->
+  <script src="../../../src/js/main.js" defer></script>
+  <script src="../../../src/js/winner.js" defer></script>
+  <script src="../../../service-worker.js"></script>
+  <!-- Manifest -->
+  <link rel="manifest" href="../../../manifest.webmanifest" />
+</head>
+
+<body>
+  <div class="container-user">
+    <h1>Winnaar!</h1>
+    <img src="../../../src/img/assets/faces/unknown.png" class="roomImg">
+    <h2>Gast 3</h2>
+    <h2 id="kamernaam-winner"></h2>
+    <h3 id="description-winner"></h3>
+  </div>
+  <div class="container-room">
+    <h2 class="nrUser">#3</h2>
+    <img src="../../../src/img/assets/empty_room_square.png">
+  </div>
+  <div class="container-room-stats">
+    <h3>Stemmen: <span id="stemmen-winner"></span></h3>
+    <h3>Tijdsduur: <span id="tijdsduur-winner"></span></h3>
+    <h3>Gebruikte Meubels: <span id="meubels-winner"></span></h3>
+  </div>
+  <div class="container-restartBtn">
+    <a class="roundBtn btn--blue" onclick="reset()">Afsluiten</a>
+  </div>
+  <script>
+    async function reset() {
+      window.location.href = "../";
+      const result = await fetch("/api/reset/", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        }
+      }).then((res) => res.json());
+    }
+  </script>
+</body>
+
+</html>

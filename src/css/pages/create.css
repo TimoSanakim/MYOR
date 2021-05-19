@@ -36,6 +36,7 @@ main#create {
 .controls {
   flex: 1;
 }
+
 .controls ul {
   height: 40px;
   padding: 10px;
@@ -104,6 +105,7 @@ button[type="submit"] {
   align-items: center;
   justify-content: space-between;
 }
+
 .shapes .content-box {
   display: flex;
   align-items: center;

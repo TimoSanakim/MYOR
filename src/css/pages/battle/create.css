@@ -22,6 +22,7 @@ main#create {
 :root {
   --gutter: 10px;
 }
+
 .room {
   border-radius: 10px;
   height: 35vh;
@@ -40,31 +41,39 @@ main#create {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
+
 .grid-container {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px dashed rgba(255, 255, 255, 0.5);
 }
+
 .grid-container img {
   height: 60px;
 }
+
 .grid-container .bank {
   transform: scale(3);
 }
+
 .grid-container .plant {
   transform: scale(2);
 }
+
 .grid-container .lamp {
   transform: scale(3);
 }
+
 .grid-container .stoel {
   transform: scale(3);
 }
+
 /* Controls */
 .controls {
   flex: 1;
 }
+
 .controls ul {
   height: 40px;
   padding: 10px;
@@ -88,9 +97,11 @@ main#create {
   justify-content: space-between;
   margin-top: 60px;
 }
+
 .content-box {
   padding: 0px;
 }
+
 .products .content-box {
   width: 80px;
   display: flex;
@@ -98,36 +109,45 @@ main#create {
   justify-content: center;
   height: 80px;
 }
+
 .products .bg {
   background-size: 60px 60px;
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .products .bank-bg {
   background-image: url(../../../img/backgrounds/bank-bg.png);
 }
+
 .products .stoel-bg {
   background-image: url(../../../img/backgrounds/stoel-bg.png);
 }
+
 .products .lamp-bg {
   background-image: url(../../../img/backgrounds/lamp-bg.png);
 }
+
 .products .plant-bg {
   background-image: url(../../../img/backgrounds/plant-bg.png);
 }
+
 .products .plant-bg,
 .products .lamp-bg {
   background-size: 30px 60px;
 }
+
 .products .content-box img {
   width: 60px;
   height: 60px;
   box-sizing: border-box;
 }
+
 .products .content-box img.plant,
 .products .content-box img.lamp {
   width: 30px;
 }
+
 .required-item:before {
   background: var(--blue);
   content: "Verplicht";

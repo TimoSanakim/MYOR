@@ -5,35 +5,60 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stemmen - MYOR</title>
+  <title>Vote</title>
   <!-- Core CSS -->
-  <link rel="stylesheet" href="../../src/css/reset.css" />
-  <link rel="stylesheet" href="../../src/css/base.css" />
-  <link rel="stylesheet" href="../../src/css/components.css" />
+  <link rel="stylesheet" href="../../../src/css/reset.css" />
+  <link rel="stylesheet" href="../../../src/css/base.css" />
+  <link rel="stylesheet" href="../../../src/css/components.css" />
   <!-- Pages CSS -->
-  <link rel="stylesheet" href="../../src/css/pages/battle/stemmen.css" />
+  <link rel="stylesheet" href="../../../src/css/pages/battle/vote_rooms.css" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- JS -->
-  <script src="../../src/js/main.js" defer></script>
-  <script src="../../service-worker.js"></script>
+  <!-- <script src="../../../src/js/main.js" defer></script> -->
+  <script src="../../../service-worker.js"></script>
+  <script src="../../../src/js/voting.js" defer></script>
   <!-- Manifest -->
-  <link rel="manifest" href="../../manifest.webmanifest" />
+  <link rel="manifest" href="../../../manifest.webmanifest" />
 </head>
-
 <body>
-  <!-- Content -->
-  <main id="stemmen">
-    <h1>Stemmen</h1><br>
-    <form id="stem-form">
-      <input type="radio" name="stem" value="1"> <label for="1">1</label><br>
-      <input type="radio" name="stem" value="2"> <label for="2">2</label><br>
-      <input type="radio" name="stem" value="3"> <label for="3">3</label><br><br>
-      <button type="submit" name="stemSubmit" id="submit" value="Submit">
-        Stemmen
-      </button>
-    </form>
-  </main>
+  <div class="parent">
+    <div class="tophalf">
+      <div class="container-user">
+        <img id="image-user" class="profile-pic" src="" />
+        <h2 id="name-user"></h2>
+        <h3 id="room-type"></h3>
+      </div>
+      <div class="container-room">
+        <h1 id="number-user"></h1>
+        <img id="image-room" src="../../../src/img/assets/empty_room_square.png" />
+      </div>
+    </div>
+    <div class="bottomhalf">
+      <form id="stem-form">
+        <div class="container-buttons">
+          <div class="radio-toolbar">
+            <input type="radio" id="radio1" name="stem" value="1" />
+            <label for="radio1">1</label>
+            <input type="radio" id="radio2" name="stem" value="2" />
+            <label for="radio2">2</label>
+            <input type="radio" id="radio3" name="stem" value="3" />
+            <label for="radio3">3</label>
+          </div>
+        </div>
+        <div class="container-button-submit">
+          <button type="submit" name="stemSubmit" id="submit" value="Submit">
+            Stemmen
+          </button>
+        </div>
+      </form>
+      <div class="container-text">
+        <p>Stem op je favoriete kamer</p>
+        <span id="timer"></span>
+        <span id="radiocheck"></span>
+      </div>
+    </div>
+  </div>
   <script>
     // Set cookie
     function setCookie(cname, cvalue, exdays) {
@@ -79,6 +104,7 @@
     // Execute function on form submit
     stemForm.addEventListener("submit", stemmen);
     async function stemmen(event) {
+      window.location.href = "../loading/";
       // Check cookie
       checkCookie();
 
@@ -89,7 +115,9 @@
 
       if (cookieValue == 2) {
         event.preventDefault();
-        const stemValue = document.querySelector('input[name="stem"]:checked').value;
+        const stemValue = document.querySelector(
+          'input[name="stem"]:checked'
+        ).value;
         console.log(stemValue);
         const result = await fetch("/api/stemmen/", {
           method: "POST",
@@ -106,11 +134,12 @@
         } else {
           alert(result.error);
         }
+
       } else {
         alert("User already voted");
       }
-    }
 
+    }
   </script>
 </body>
 

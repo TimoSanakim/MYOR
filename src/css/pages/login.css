@@ -6,16 +6,19 @@ main {
   width: 100vw;
   flex-direction: column;
 }
+
 .logo img {
   max-width: 25vw;
   margin-bottom: 50px;
 }
+
 .login-forms {
   display: flex;
   justify-content: space-between;
   width: 75vw;
   align-items: center;
 }
+
 .account .content-box,
 .guest .content-box {
   display: flex;
@@ -24,12 +27,15 @@ main {
   flex-direction: column;
   text-align: center;
 }
+
 .account .content-box a {
   color: var(--blue);
 }
+
 .content-box h1 {
   font-size: 1.3em;
 }
+
 .account .content-box input[type="text"],
 .account .content-box input[type="password"] {
   border: none;
@@ -38,37 +44,45 @@ main {
   background: var(--off-white);
   width: calc(100% - 30px);
 }
+
 .account .content-box input[type="submit"] {
   font-size: 16px;
   border: none;
   font-family: var(--base-font);
   width: 100%;
 }
+
 .guest .content-box {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
+
 .guest .content-box i {
   font-size: 50px;
   margin-bottom: 20px;
 }
+
 form {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
+
 .content-box {
   position: relative;
   transition: all 0.3s ease;
   padding: 50px 20px;
 }
+
 .content-box:hover {
   transform: translateY(-10px);
 }
+
 .or {
   margin-right: 5vw;
   margin-left: 5vw;
 }
+
 .or h1 {
   font-size: 30px;
 }
