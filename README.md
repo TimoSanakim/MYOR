@@ -36,13 +36,9 @@ For MongoDB installation please refer to the official [MongoDB Documentation](ht
 
 This project uses Mongoose to handle MongoDB data. Follow the official [Mongoose Documentation](https://mongoosejs.com/docs/guide.html) for help if needed.
 
-To connect to the database, place your connection string in the following files:
+To connect to the database, place your connection string in the following file:
 
-/routes/kamer.js
-
-/routes/stem.js
-
-/routes/reset.js
+/routes/database.js
 
 ```javascript
 mongoose.connect("your connection string", {
