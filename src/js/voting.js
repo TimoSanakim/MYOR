@@ -50,8 +50,8 @@ function roomnumber3() {
 // Static userdata content fill
 function person1() {
   document.getElementById("image-user").src =
-    "../../../src/img/assets/faces/person3.png";
-  document.getElementById("name-user").innerHTML = "Petra jansen";
+    "../../../src/img/assets/faces/avatar.png";
+  document.getElementById("name-user").innerHTML = "Rafaël van der Heijden";
   document.getElementById("room-type").innerHTML = "Huiskamer";
   document.getElementById("number-user").innerHTML = "#1";
   document.getElementById("image-room").src =
@@ -59,8 +59,8 @@ function person1() {
 }
 function person2() {
   document.getElementById("image-user").src =
-    "../../../src/img/assets/faces/person2.png";
-  document.getElementById("name-user").innerHTML = "Hugo Jong";
+    "../../../src/img/assets/faces/avatar.png";
+  document.getElementById("name-user").innerHTML = "Timo Sanakim";
   document.getElementById("room-type").innerHTML = "Huiskamer";
   document.getElementById("number-user").innerHTML = "#2";
   document.getElementById("image-room").src =

@@ -22,16 +22,16 @@ window.addEventListener("load", (event) => {
 
 // Static content fills
 function fill() {
-  document.getElementById("person1").innerHTML = "Gert Gerritsen";
+  document.getElementById("person1").innerHTML = "Rafaël van der Heijden";
   document.getElementById("person1image").src =
-    "../../../src/img/assets/faces/person1.png";
+    "../../../src/img/assets/faces/avatar.png";
   document.getElementById("participant1").innerHTML = "Deelnemer 1";
   document.getElementById("room1").src =
     "../../../src/img/assets/empty_room_square.png";
 
-  document.getElementById("person2").innerHTML = "Bart Straatman";
+  document.getElementById("person2").innerHTML = "Timo Sanakim";
   document.getElementById("person2image").src =
-    "../../../src/img/assets/faces/person2.png";
+    "../../../src/img/assets/faces/avatar.png";
   document.getElementById("participant2").innerHTML = "Deelnemer 2";
   document.getElementById("room2").src =
     "../../../src/img/assets/empty_room_square.png";
