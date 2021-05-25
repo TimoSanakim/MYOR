@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voting Dashboard</title>
     <!-- Core CSS -->
     <link rel="stylesheet" href="../../../src/css/reset.css" />
     <link rel="stylesheet" href="../../../src/css/base.css" />
     <link rel="stylesheet" href="../../../src/css/components.css" />
     <!-- Pages CSS -->
-    <link rel="stylesheet" href="../../../src/css/pages/battle/display_votes.css" />
+    <link
+      rel="stylesheet"
+      href="../../../src/css/pages/battle/display_votes.css"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <!-- JS -->
     <script src="../../../src/js/main.js" defer></script>
     <script src="../../../src/js/after_battle.js" defer></script>
@@ -21,75 +26,79 @@
     <script src="../../../service-worker.js"></script>
     <!-- Manifest -->
     <link rel="manifest" href="../../../manifest.webmanifest" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="textContainer">
-        <h2>Stem op je favoriete kamer in de IKEA app.</h2>
-        <span id="result-timer">02:00</span>
+      <h2>Stem op je favoriete kamer in de IKEA app.</h2>
+      <span id="result-timer">02:00</span>
     </div>
     <div class="cardContainer">
-        <div class="room1 card">
-            <h2>Kamer <span id="kamernummer_1">1</span></h2>
-            <h4 id="kamernaam_1">Kamernaam</h4>
-            <img src="../../../src/img/assets/empty_room.png" alt="roomImg">
-            <div class="roomInfo">
-                <div>
-                    <p>Stemmen:</p>
-                    <p id="stemmenTxt_1"></p>
-                </div>
-                <div>
-                    <p>Tijdsduur:</p>
-                    <p id="tijdTxt_1"></p>
-                </div>
-                <div>
-                    <p>Aantal meubels:</p>
-                    <p id="meubelsTxt_1"></p>
-                </div>
-            </div>
-            <progress value="0" id="room1"></progress>
+      <div class="room1 card">
+        <h2>Kamer <span id="kamernummer_1">1</span></h2>
+        <h4 id="kamernaam_1">Kamernaam</h4>
+        <img src="../../../src/img/assets/empty_room.png" alt="roomImg" />
+        <div class="roomInfo">
+          <div>
+            <p>Stemmen:</p>
+            <p id="stemmenTxt_1"></p>
+          </div>
+          <div>
+            <p>Tijdsduur:</p>
+            <p id="tijdTxt_1"></p>
+          </div>
+          <div>
+            <p>Aantal meubels:</p>
+            <p id="meubelsTxt_1"></p>
+          </div>
         </div>
-        <div class="room2 card">
-            <h2>Kamer <span id="kamernummer_2">2</span></h2>
-            <h4 id="kamernaam_2">Kamernaam</h4>
-            <img src="../../../src/img/assets/empty_room.png" alt="roomImg">
-            <div class="roomInfo">
-                <div>
-                    <p>Stemmen:</p>
-                    <p id="stemmenTxt_2"></p>
-                </div>
-                <div>
-                    <p>Tijdsduur:</p>
-                    <p id="tijdTxt_2"></p>
-                </div>
-                <div>
-                    <p>Aantal meubels:</p>
-                    <p id="meubelsTxt_2"></p>
-                </div>
-            </div>
-            <progress value="0" id="room2"></progress>
+        <progress value="0" id="room1"></progress>
+      </div>
+      <div class="room2 card">
+        <h2>Kamer <span id="kamernummer_2">2</span></h2>
+        <h4 id="kamernaam_2">Kamernaam</h4>
+        <img src="../../../src/img/assets/empty_room.png" alt="roomImg" />
+        <div class="roomInfo">
+          <div>
+            <p>Stemmen:</p>
+            <p id="stemmenTxt_2"></p>
+          </div>
+          <div>
+            <p>Tijdsduur:</p>
+            <p id="tijdTxt_2"></p>
+          </div>
+          <div>
+            <p>Aantal meubels:</p>
+            <p id="meubelsTxt_2"></p>
+          </div>
         </div>
-        <div class="room3 card">
-            <h2>Kamer <span id="kamernummer_3">3</span></h2>
-            <h4 id="kamernaam_3">Kamernaam</h4>
-            <img src="../../../src/img/assets/empty_room.png" alt="roomImg">
-            <div class="roomInfo">
-                <div>
-                    <p>Stemmen:</p>
-                    <p id="stemmenTxt_3"></p>
-                </div>
-                <div>
-                    <p>Tijdsduur:</p>
-                    <p id="tijdTxt_3"></p>
-                </div>
-                <div>
-                    <p>Aantal meubels:</p>
-                    <p id="meubelsTxt_3"></p>
-                </div>
-            </div>
-            <progress value="0" id="room3"></progress>
+        <progress value="0" id="room2"></progress>
+      </div>
+      <div class="room3 card">
+        <h2>Kamer <span id="kamernummer_3">3</span></h2>
+        <h4 id="kamernaam_3">Kamernaam</h4>
+        <img src="../../../src/img/assets/empty_room.png" alt="roomImg" />
+        <div class="roomInfo">
+          <div>
+            <p>Stemmen:</p>
+            <p id="stemmenTxt_3"></p>
+          </div>
+          <div>
+            <p>Tijdsduur:</p>
+            <p id="tijdTxt_3"></p>
+          </div>
+          <div>
+            <p>Aantal meubels:</p>
+            <p id="meubelsTxt_3"></p>
+          </div>
         </div>
+        <progress value="0" id="room3"></progress>
+      </div>
     </div>
-</body>
-
+    <div class="skip-container">
+      <div class="skip-button btn btn--blue">
+        <a href="../winner/">Skip Timer</a>
+      </div>
+    </div>
+  </body>
 </html>
