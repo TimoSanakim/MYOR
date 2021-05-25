@@ -1,6 +1,6 @@
 // Battle timer
 var timerResult = document.getElementById("result-timer");
-minutes = 2; // Time limit in minutes
+minutes = 1; // Time limit in minutes
 counterResult = minutes * 60; // Timer in seconds
 function secondsToMinutes(d) {
   d = Number(d);
